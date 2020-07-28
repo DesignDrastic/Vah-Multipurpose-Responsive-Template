@@ -1,0 +1,149 @@
+/*!
+* ******** Menu submnenu animations ********
+*/
+/*!
+* Menu animation: on active underline
+*/
+.menu-underline
+	>li
+		ul.submenu
+			box-shadow: $navbar-submenu-shadow
+		>a
+			-webkit-transform: translateZ(0)
+			transform: translateZ(0)
+			-webkit-backface-visibility: hidden
+			backface-visibility: hidden
+			position: relative
+			overflow: hidden
+			&:before
+				content: " "
+				position: absolute
+				left: 50%
+				right: 50%
+				bottom: 0
+				height: 2px
+				background: $primary-clr
+				-webkit-transition-property: left, right
+				transition-property: left, right
+				-webkit-transition-duration: 0.3s
+				transition-duration: 0.3s
+				-webkit-transition-timing-function: ease-out
+				transition-timing-function: ease-out
+			&:hover:before,
+			&:focus:before
+			&:active:before
+				left: 0
+				right: 0
+			&:hover
+				color: $hover-clr
+
+/*!
+* Menu animation: on active triangle shape at bottom
+*/
+.menu-triangle
+	>li.mega-menu
+		ul.submenu
+			border-top: $navbar-submenu-border-top !important
+		>a
+			position: relative
+			&:hover
+				color: $hover-clr
+			&:hover:after
+				position: absolute
+				left: 0
+				right: 0
+				bottom: -1px
+				margin: auto
+				content: " "
+				width: 0
+				height: 0
+				border-left: 8px solid transparent
+				border-right: 8px solid transparent
+				border-bottom: 10px solid $primary-clr
+
+/*!
+* Menu animation: fadeInDown
+*/
+@keyframes menu-fadeInUp
+	from
+		opacity: 0
+		-webkit-transform: translate3d(0, 10%, 0)
+		transform: translate3d(0, 10%, 0)
+	to
+		opacity: 1
+		-webkit-transform: none
+		transform: none
+
+@-webkit-keyframes menu-fadeInUp
+	from
+		opacity: 0
+		-webkit-transform: translate3d(0, 10%, 0)
+		transform: translate3d(0, 10%, 0)
+	to
+		opacity: 1
+		-webkit-transform: none
+		transform: none
+.menu-up
+	animation-name: menu-fadeInUp
+	-webkit-animation-name: menu-fadeInUp
+	animation-duration: $transition
+	-webkit-animation-duration: $transition
+	transform-origin: top
+
+/*!
+* Menu animation: scaleY
+*/
+@keyframes menu-scale-Y
+	from
+		opacity: 0
+		transform: scaleY(.8)
+		-webkit-transform: scaleY(.8)
+	to
+		opacity: 1
+		transform: scaleY(1)
+		-webkit-transform: scaleY(1)
+
+@-webkit-keyframes menu-scale-Y
+	from
+		opacity: 0
+		transform: scaleY(.8)
+		-webkit-transform: scaleY(.8)
+	to
+		opacity: 1
+		transform: scaleY(1)
+		-webkit-transform: scaleY(1)
+
+.menu-scale
+	animation-name: menu-scale-Y
+	-webkit-animation-name: menu-scale-Y
+	animation-duration: $transition
+	-webkit-animation-duration: $transition
+	transform-origin: top
+
+
+// /* Menu animations */
+// /*!
+// *  1. Menu fadeInUp 
+// */
+// .menu-animation-up
+// 	>li
+// 		>a
+// 			position: relative
+// 			@extend .menu-triangle
+// 		ul.submenu
+// 			// box-shadow: $navbar-submenu-shadow
+// 			border-top: 2px solid $primary-clr !important
+// 			@extend .menu-scale
+
+// /*!
+// * 2. Menu scale to Y
+// */
+// .menu-animation-scale
+// 	>li
+// 		>a
+// 			position: relative
+// 			@extend .menu-underline
+// 		ul.submenu
+// 			// border-top: $navbar-submenu-border-top !important
+// 			box-shadow: $navbar-submenu-shadow
+// 			@extend .menu-scale

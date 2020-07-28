@@ -1,0 +1,117 @@
+/*!
+* Where: not support text gradient
+*/
+.no-txt-gradient
+	background: none
+	-webkit-background-clip: none
+	background-clip: none
+	-webkit-text-fill-color: none
+	color: $primary-clr
+
+/*!
+* Where: not support text gradient
+*/
+.no-txt-gradient-reverse
+	background: none
+	-webkit-background-clip: none
+	background-clip: none
+	-webkit-text-fill-color: none
+	color: $gradient-color2
+
+/*!
+* Where: not support text gradient
+*/
+.no-gradient-primary
+	background: none
+	-webkit-background-clip: none
+	background-clip: none
+	-webkit-text-fill-color: none
+	color: $hover-clr	
+
+/*! Where no support: Custom text gradient bg */
+no-vah-txt-gradient($clr1, $clr2)
+	background: none
+	-webkit-background-clip: none
+	background-clip: none
+	-webkit-text-fill-color: none
+	color: $clr1
+
+/*!
+* No class
+*/
+.no-backgroundcliptext
+/*!
+* No preloader
+*/
+	.pre-loader
+		.pre-loader-bg
+			h2
+				@extend .no-txt-gradient
+				.vah-loader-dot
+					no-vah-txt-gradient($gradient-color1, $gradient-color2)
+	.vah-logo
+		@extend .no-txt-gradient
+		&:hover
+			@extend .no-txt-gradient-reverse
+
+	// Where no support: Features section
+	.vah-features
+		.vah-features-block
+			.vah-feature-title
+			&:hover .vah-feature-icon
+				@extend .no-gradient-primary
+	// Where no support: About section
+	.vah-fi-box
+		&:hover .vah-fi i:before
+			@extend .no-gradient-primary
+	// Where no support: Numbers
+	.vah-numbers
+		.vah-number-inside
+			.vah-number-digit
+				no-vah-txt-gradient($gradient-color1, $gradient-color2)
+
+
+	// Where no support: Breadcrumb
+	.vah-main-heading
+		.vah-main-title
+			@extend .no-gradient-primary
+	
+	// Where no support: Contact CTA
+	.vah-contact-cta
+		.vah-content-cta-cols
+			&:hover .vah-contact-cta-title
+				@extend .no-txt-gradient
+
+	// Where no support: 404
+	.vah-404
+		@extend .no-txt-gradient
+
+	// Where no support: Who we
+	.vah-who
+		.vah-who-we
+			.vah-who-cols
+				.vah-who-title
+				&:hover .vah-who-title
+					@extend .no-txt-gradient
+
+	// Where no support: Service page
+	.vah-service-tabs
+		.vah-service-tab-content
+			.vah-service-content
+				.vah-service-content-center
+					.vah-service-part-left
+						.vah-service-part-left-inside
+							i
+								@extend .no-txt-gradient
+
+	// Where no support: Footer
+	.footer
+		.main-footer
+			.vah-footer-title
+				no-vah-txt-gradient($gradient-color1, $gradient-color2)
+
+	// Where no support: Menu toggle icon
+	.vah-navbar-container
+		.toggle-menu-icon
+			button
+				@extend .no-txt-gradient

@@ -1,0 +1,407 @@
+// Navigation
+// Menu animation
+@import "menu-animation"
+
+$menu-width = 225px
+$submenu-padding = 5px
+
+$nav-ul-padding-tb = 20px
+$nav-ul-padding-lr = 0
+
+$nav-a-padding-tb = 0
+$nav-a-padding-lr = 12px
+
+$navbar-a-hvr-left-padding = 5px
+
+// Padding for sticky menu
+$sticky-menu-padding = 15px
+$logo-transition = .3s
+
+// Menus
+$menu-fs = 15px
+
+/*!
+* Pre header css
+*/
+.pre-header
+	width: 100%
+	background: $pre-header-bg
+	min-height: 35px
+	line-height: 35px
+	box-shadow: 0 -2px 2px -1px $pre-header-bg-shadow-clr inset;
+	.social
+		.socialize-icon
+			float: left
+			width: 34px
+			text-align: center
+			border-right: $pre-header-border
+			transition: $transition
+			a
+				padding: 8px
+				text-decoration: none
+				color: $pre-header-social-ico-clr
+				i
+					transition: $transition
+			&:hover
+				box-shadow: 0 20px 5px 0 $pre-header-topbar-btn-hvr-bg inset, 0 -20px 5px 0 $pre-header-topbar-btn-hvr-bg inset
+			&:hover i
+				color: $pre-header-social-ico-hvr-clr
+		.socialize-icon:first-child
+			border-left: $pre-header-border
+/*!
+* Pre header buttons
+*/
+.pre-header-btn
+	margin-left: -3px
+	border: 1px solid #CCC
+	height: 35px
+	background: transparent
+	padding: 0 10px
+	border: none
+	border-right: $pre-header-border
+	outline: none
+	cursor: pointer
+	font-family: $primary-ff
+	font-size: 16px
+	color: $pre-header-topbar-btn-clr
+	transition: $transition
+	&:hover
+		color: $pre-header-topbar-btn-hvr-clr
+		box-shadow: 0 20px 5px 0 $pre-header-topbar-btn-hvr-bg inset, 0 -20px 5px 0 $pre-header-topbar-btn-hvr-bg inset
+	&:first-child
+		border-left: $pre-header-border
+/*!
+* Pre header button active
+*/
+.pre-header-btn.btn-active
+		background: $pre-header-btn-active-bg
+		color: $pre-header-btn-active-clr
+
+/*!
+* Auth / Search div before preheader section
+*/
+.pre--pre-header
+	padding: 15px
+	background: $pre-header-section-bg
+	box-shadow: 0 0 4px rgba(0, 0, 0, .5) inset
+	.pre-header-search
+		width: 60%
+		margin-left: 20%
+		.vah-input
+			width: 100%
+		i
+			color: #FFFFFF
+			cursor: pointer
+			font-size: 20px
+	.pre-header-close-btn
+		position: absolute
+		top: 10px
+		right: 50px
+		& span
+			display: inline-block
+			width: 25px
+			height: 25px
+			line-height: 26px
+			text-align: center
+			border-radius: 40px
+			transition: $transition
+			& i
+				border-radius: 15px
+				font-size: 20px
+				color: white
+				cursor: pointer
+				transition: $transition
+				^[2]:hover ^[3..-1]
+					color: $hover-clr
+			&:hover
+				box-shadow: 0 0 30px 10px white inset
+/*!
+* Pre header elements
+*/
+	.vah-input
+		width: 100%
+		background: $pre-header-input-bg
+		color: $pre-header-input-clr
+		font-family: $primary-ff
+		height: 40px
+		border: $pre-header-border
+		padding: 10px
+		outline: none
+		transition: $transition
+		&:focus
+			box-shadow: $pre-header-input-shadow
+			border: $pre-header-input-border
+	.vah-btn
+		color: $pre-header-btn-clr
+		height: 40px
+		border: none
+		font-family: $primary-ff
+		padding: 0 20px
+		cursor: pointer
+		background: transparent
+		border: $pre-header-btn-border
+		background: $pre-header-btn-bg
+		transition: $transition
+		outline: none
+		&:hover
+			color: $pre-header-btn-hvr-clr
+			box-shadow: $pre-header-btn-shadow
+
+/*!
+* =======================================================
+* *********** Menu Navigation ***********
+* ======================================================= 
+*/
+.vah-navbar
+	box-shadow: $navbar-shadow
+	width: 100%
+	background: $navbar-bg
+	position: relative
+	.main-menu
+		display: table
+		.menu-items
+			display: table-cell
+			vertical-align: middle
+			list-style: none
+			>li.active
+				a
+					background: $menu-active-bg
+					color: $menu-active-clr
+					box-shadow: $menu-active-shadow
+					pointer-events: none
+					transition: $transition
+			>li.mega-menu.mega-1-column
+				position: relative
+				ul.submenu
+					min-width: $menu-width + (2*$submenu-padding)
+			>li.mega-menu.mega-2-column
+				position: relative
+				ul.submenu
+					right: 0
+					min-width: (2 * $menu-width) + (2*$submenu-padding) + 2
+			>li.mega-menu.mega-3-column
+				position: relative
+				ul.submenu
+					min-width: (3*$menu-width) + (2*$submenu-padding) + 2
+			>li.mega-menu.mega-4-column
+				ul.submenu
+					min-width: (4*$menu-width) + (2*$submenu-padding)
+					>li
+						width: 25%
+			>li.mega-menu.mega-5-column
+				ul.submenu
+					min-width: (5*$menu-width) + (2*$submenu-padding)
+					>li
+						width: 20%
+			// Menu(link) hover animation 
+			@extend .menu-underline
+			>li
+				float: left
+				padding: $nav-ul-padding-tb $nav-ul-padding-lr
+				margin: 0 1px
+				>a
+					color: $navbar-a-clr
+					text-decoration: none
+					font-family: $primary-ff
+					font-weight: 600
+					font-size: $menu-fs
+					padding: $nav-ul-padding-tb $nav-a-padding-lr
+					transition: $transition
+					cursor: pointer
+					&:hover
+						color: $navbar-a-hvr-clr
+				ul.submenu
+					position: absolute
+					display: none
+					border: $navbar-submenu-border
+					background: $navbar-submenu-bg
+					list-style: none
+					top: 100%
+					z-index: 99999
+					margin-left: 15%
+					padding: $submenu-padding
+					// overflow: hidden
+					border-radius: 0 0 3px 3px
+					transition: $navbar-submenu-transition
+					@extend .menu-scale
+					^[-1]:hover ^[4..-1]
+						display: block
+						width: 100%
+						right: 0
+					^[-1]:hover > a
+						color: $navbar-a-hvr-clr
+						background: $navbar-hvr-bg
+					>li
+						width: $menu-width
+						float: left
+						padding: 0 5px
+						>ul
+							list-style: none
+							>li
+								>a
+									cursor: pointer
+									font-family: $primary-ff
+									border-bottom: $navbar-submenu-a-border-bottom
+									display: block
+									padding: 10px 0
+									width: 100%
+									text-decoration: none
+									color: $navbar-submenu-a-clr
+									transition: $transition
+									&:hover
+										padding-left: $navbar-a-hvr-left-padding
+										color: $navbar-submenu-a-hvr-clr
+										background: $navbar-submenu-a-hvr-bg
+							li.active a
+								pointer-events: none
+								background: $submenu-active-bg
+								color: $submenu-active-clr
+								padding-left: $submenu-active-padding
+					// Dropdown menu
+					.menu-dropdown
+						position: relative
+						i
+							font-size: 20px
+							float: right
+							margin-left: -4px
+						.menu-dropdown-list
+							display: none
+							min-width: 200px
+							background: $navbar-submenu-bg
+							list-style: none
+							margin: 0
+							padding: 0 10px
+							position: absolute
+							z-index: 999
+							top: 0
+							border: 1px solid rgba(0, 0, 0, .25)
+							border-radius: 3px
+							box-shadow: 0 6px 5px -4px rgba(0,0,0,0.25)
+							li
+								a
+									display: inline-block
+									font-family: $primary-ff
+									color: $navbar-submenu-a-clr
+									text-decoration: none
+									padding: 10px 0
+									width: 100%
+									border-bottom: $navbar-submenu-a-border-bottom
+									transition: $transition
+									&:hover
+										background: $navbar-submenu-a-hvr-bg
+										color: $navbar-submenu-a-hvr-clr
+										padding-left: $navbar-a-hvr-left-padding
+								&:last-child a
+										border-bottom: none
+							li.active
+								a
+									padding-left: 5px
+						&:hover .menu-dropdown-list
+							display: block
+							@extend .menu-scale
+						.menu-dropdown-list.right
+							left: 100%
+						.menu-dropdown-list.left
+							right: 100%
+/*!
+* Large menubar
+*/
+.vah-navbar.vah-navbar-large
+	.main-menu
+		.menu-items
+			>li
+				$nav-ul-padding-tb = $nav-ul-padding-tb + $sticky-menu-padding
+				padding: $nav-ul-padding-tb $nav-ul-padding-lr
+				transition: $transition
+				>a
+					padding: $nav-ul-padding-tb $nav-a-padding-lr
+
+/*!
+* Sticky / Fixed on top menu
+*/
+.vah-navbar.stick.vah-navbar-stick
+	z-index: 999
+	position: fixed
+	top: 0
+	.vah-logo
+		transform: none
+	.main-menu
+		.menu-items
+			>li
+				padding: $nav-ul-padding-tb $nav-ul-padding-lr
+				>a
+					padding: $nav-ul-padding-tb $nav-a-padding-lr
+/*!
+* Menu inside box layout
+*/
+.vah-box
+	.vah-navbar
+		transition: none
+	.vah-navbar.stick.vah-navbar-stick
+		width: $box-width
+		margin: 0 auto
+		transition: none
+
+/*!
+* Logo transition
+*/
+.vah-logo-lite
+	transition: $transition	
+
+/*!
+* Transparent Navigation
+*/
+.vah-navbar.navbar-transparent
+	position: fixed
+	z-index: 99
+	background: rgba(0, 0, 0, .5)
+	transition: $transition
+	.vah-logo
+		transition: $transition
+		transform: scale(1.15)
+	.main-menu
+		.menu-items
+			padding: $ul-padding-tb $ul-padding-lr
+			>li.active
+				a
+					background: transparent
+					color: white
+					box-shadow: 0 -2px 0 #FFFFFF inset
+			>li
+				padding: $ul-padding-tb $ul-padding-lr
+				>a
+					padding: $ul-padding-tb 12px
+					color: #CCC
+					&:after,
+					&:before
+						display: none
+				ul.submenu
+					background: rgba(0, 0, 0, .75)
+					border: none
+					box-shadow: none
+					^[-1]:hover > a
+						background: transparent
+						color: #FFFFFF
+					>li
+						>ul
+							>li
+								>a
+									color: #CCC
+									border-bottom: none
+									&:hover
+										background: rgba(0, 0, 0, .5)
+										color: #FFFFFF
+
+					.menu-dropdown
+						.menu-dropdown-list
+							background: rgba(0, 0, 0, .9)
+							border: 1px solid #000
+							box-shadow: none
+							li
+								a
+									color: #CCC
+									border-bottom: none
+									transition: $transition
+									&:hover
+										background: rgba(0, 0, 0, .5)
+										color: #FFFFFF

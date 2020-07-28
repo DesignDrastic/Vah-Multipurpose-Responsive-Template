@@ -1,0 +1,81 @@
+// Pre-header variables
+$primary-clr = #1C1C1C
+$hover-clr = #292F2F
+$pre-header-bg = #FFFFFF
+$pre-header-bg-shadow-clr = transparent
+
+// Pre-header social variables
+$pre-header-border = 1px solid rgba(255,255,255,0.5)
+$pre-header-social-ico-clr = #3A3F3F
+$pre-header-social-ico-hvr-clr = #FFFFFF
+$pre-header-topbar-btn-clr = #3A3F3F
+$pre-header-topbar-btn-hvr-clr = #FFFFFF
+$pre-header-topbar-btn-hvr-bg = #3A3F3F
+$pre-header-section-bg = #3C3C3C
+
+// Pre-header elements
+$pre-header-input-shadow = 0 0 3px #CCC
+$pre-header-input-border = 1px solid #000
+$pre-header-input-bg = #1C1C1C
+$pre-header-input-clr = #FFFFFF
+$pre-header-btn-clr = #FFFFFF
+$pre-header-btn-bg = #1C1C1C
+$pre-header-btn-active-clr = #FFFFFF
+$pre-header-btn-active-bg = #3C3C3C
+$pre-header-btn-hvr-clr = #1C1C1C
+$pre-header-btn-border = 1px solid #CCC
+$pre-header-btn-shadow = 0 30px 5px 0 white inset, 0 -30px 5px 0 white inset
+
+// Navrbar / Menu animations
+$menu-active-bg = #1C1C1C
+$menu-active-clr = #FFFFFF
+$navbar-shadow = 0 5px 5px -5px rgba(0, 0, 0, 0.2)
+$navbar-bg = #3A3F3F
+
+// Main menu
+$navbar-a-clr = #CCC
+$navbar-a-hvr-clr = #FFFFFF
+$navbar-hvr-bg = #1C1C1C
+
+// Submenu / Megamenu
+$navbar-submenu-bg = #1C1C1C
+$navbar-submenu-border = none
+$navbar-submenu-transition = .3s
+$navbar-submenu-a-border-bottom = none
+$navbar-submenu-a-clr = #CCC
+$navbar-submenu-a-hvr-clr = #FFFFFF
+$navbar-submenu-a-hvr-bg = #3A3F3F
+$section-theme-bg = #3A3F3F
+
+$navbar-submenu-shadow = none
+$navbar-submenu-border-top = none
+
+// ******** Theme modifications (colors & bgs and all according to theme.)
+// Dark bgs
+.vah-section.vah-section-theme-bg
+	background: #292F2F
+	.vah-heading
+		color: #FCFCFC
+		strong
+			color: #FFFFFF
+	.vah-title
+		color: #F5F7F9
+	.vah-text
+		color: #FCFCFC
+	.vah-label
+		color: #FFFFFF
+
+// Theme section dark background
+.vah-features.vah-section-theme-bg
+	.vah-features-block
+		.vah-feature-icon
+			color: #CCC
+		&:hover .vah-feature-icon
+			// background: none
+			background: -webkit-linear-gradient( #CCC, #FFF )
+			background: -moz-linear-gradient( #CCC, #FFF )
+			background: linear-gradient( #CCC, #FFF )
+			-webkit-background-clip: text
+			background-clip: text
+			-webkit-text-fill-color: transparent
+			text-fill-color: transparent

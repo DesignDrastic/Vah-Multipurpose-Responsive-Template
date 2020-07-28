@@ -1,0 +1,126 @@
+.vah-wrapper {
+	background: url('template/assets/images/slider/slide_1.jpg');
+	background-attachment: fixed;
+	background-size: cover;
+	height: 60vh;
+	position: relative;
+	display: table;
+	width: 100%;
+	box-shadow: 0 0 15px #333 inset;
+}
+.vah-wrapper:before {
+	position: absolute;
+	content: " ";
+	background: rgba(0, 0, 0, 0.6);
+	z-index: 0;
+	top: 0;
+	left: 0;
+	right: 0;
+	bottom: 0;
+}
+.vah-main-logo {
+	position: fixed;
+  height: 60vh;
+	float: none;
+	display: table-cell;
+	text-align: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  flex-flow: column;
+  box-shadow: 0 -70px 30px -30px #fff inset;
+}
+.vah-main-logo h2{
+	font-size: 7em;
+	display: inline-block;
+	font-family: 'Ubuntu', sans-serif;
+	color: #fff;
+}
+.vah-main-logo h3{
+	font-family: "Ubuntu Condensed", sans-serif;
+	color: #FFF;
+	font-size: 35px;
+	text-shadow: 0 0 2px #333;
+}
+.content {
+	background: #FFF;
+	position: relative;
+	z-index: 999;
+}
+/* Frame */
+.frame {
+	position: relative;
+	border: 15px solid #3C3C3C;
+	border-radius: 15px;
+	min-width:300px;
+	width: 90%;
+	margin: 0 auto;
+	overflow: hidden;
+}
+.frame img {
+	width: 100%;
+}
+
+.frame .frame-caption {
+	position: absolute;
+	background: rgba(0, 0, 0, .7);
+	top: 0;
+	bottom: 0;
+	left: 0;
+	right: 0;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	opacity: 0;
+	visibility: hidden;
+	transition: .5s;
+	transform: scaleY(0);
+}
+
+.frame:hover .frame-caption {
+	top: 0;
+	opacity: 1;
+	visibility: visible;
+	transform: scaleY(1);
+}
+.frame .frame-btn {
+	background: transparent;
+	border: none;
+	display: inline-block;
+	border-top: 1px solid #FFF;
+	border-bottom: 1px solid #FFF;
+	padding: 10px 20px;
+	font-family: 'Ubuntu', sans-serif;
+	color: #FFF;
+	outline: none;
+	text-decoration: none;
+	transition: .5s;
+}
+.frame .frame-btn:hover {
+	box-shadow: 0 40px 0 #FFF inset, 0 -40px 0 #FFF inset;
+	color: #3C3C3C;
+}
+
+/* Fonts & Labels */
+.main-title {
+	font-family: "Ubuntu Condensed", sans-serif;
+	color: #0c6db8;
+  display: inline-block;
+  font-size: 40px;
+  border-bottom: 2px solid #CCC;
+  font-weight: 400;
+}
+.frame-title {
+	font-family: "Source Sans Pro", sans-serif;
+	font-weight: 600;
+	text-align: center;
+	margin: 10px 0;
+	color: #636363;
+}
+.footer {
+	background: #3C3C3C;
+	font-family: "Source Sans Pro", sans-serif;
+	padding: 20px 0;
+	color: #FFF;
+}

@@ -1,0 +1,380 @@
+/*!
+* ********* Media Queries ********* 
+*/
+
+@media (max-width: 767px)
+	html, body
+		overflow-x: hidden
+	.vah-cta
+		.vah-cta-title
+			font-size: round($cta-title-size / 1.5) !important
+			white-space: normal
+		.vah-cta-center
+			display: inline-block
+	.vah-heading
+		font-size: round($heading-size / 1.25)
+	.vah-label
+		font-size: round($label-size / 1.25)
+	.vah-title
+		font-size: round($title-size / 1.25)
+	.vah-main-title
+		font-size: round($breadcrump-title-size / 1.25)
+	.vah-extra-large-title
+		font-size: round($extra-large-title-size / 1.25)
+	.mob-f-none
+		float: none
+	.hide-mob
+		display: none
+	.visible-ts
+		display: block
+	.ts-text-center
+		text-align: center
+	.mob-align-none
+		text-align: inherit 
+
+	/*!
+	*	Vah responsive 
+	*/
+	.vah-responsive
+		background-repeat: no-repeat
+		background-size: auto 100%
+		.vah-responsive-center
+			display: block
+			.vah-responsive-left
+				text-align: center
+				float: none
+				border: none
+				.vah-responsive-left-inside
+					float: none
+					padding: 0
+					text-align: center
+					width: inherit
+					i
+						margin: 0
+			.vah-responsive-right
+				border: none
+				margin-top: 15px
+				.vah-responsive-right-inside
+					padding: 0
+					margin: 0
+					border: none
+	
+	/*!
+	*	Feature div center
+	*/
+	.vah-special-center
+		margin: 10px 0
+	
+	/*!
+	*	Vah theme slider / carousel
+	*/
+	.vah-slider
+		.vah-slider-slide
+			.vah-slider-content
+				.vah-slider-inner
+					.vah-slider-inner-content
+						.vah-slider-title
+							font-size: round($header-caption-fs / 1.5)
+	
+	/*!
+	*	Slider caption button
+	*/
+	.vah-gs-btn
+		font-size: 15px
+		padding: 10px 35px
+
+	/*!
+	*	Logo center
+	*/
+	.vah-navbar-container
+		.vah-logo-v-center
+			position: relative
+			transform: none
+			text-align: center
+			padding: 12px 0
+			display: table
+			width: 100%
+			.vah-logo
+				padding-top: 2px
+		.toggle-menu-icon
+			display: block
+			z-index: 9
+			float: left
+			// position: absolute
+			// top: 50%
+			// transform: translate(0, -50%)
+			button
+				display: inline-block
+				// padding: 0 15px
+				cursor: pointer
+				@extend .txt-gradient
+				border: none
+				font-size: 26px
+				outline: none
+	
+	/*!
+	*	********** About page **********
+	*/
+	.vah-who
+		.vah-who-we
+			.vah-who-cols
+				border-bottom: 1px solid #CCC
+
+	/*!
+	*	Portfolio page
+	*/
+	.portfolio.p-column-5,
+	.portfolio.p-column-4,
+	.portfolio.p-column-2
+		.card
+			width: 100%
+	
+	.portfolio-tag-list
+		li
+			padding: 7px 10px
+		
+	/*!
+	*	Service page
+	*/
+	.vah-service-tabs
+		.vah-service-tab-link
+			display: none
+		.vah-service-tab-content
+			.vah-service-content
+				.vah-service-content-center
+					.vah-v-center
+						display: block
+					.vah-service-part-left
+						overflow: none
+						width: 100%
+						border: none
+						.vah-service-part-left-inside
+							width: 100%
+							float: none
+							padding-right: 0
+					.vah-service-part-right
+						overflow: none
+						width: 100%
+						border: none
+						.vah-service-part-right-inside
+							width: 100%
+							float: none
+
+	/*!
+	*	Theme boxed layout
+	*/
+	.vah-box
+		background: none
+		.vah-theme
+			width: 100%
+
+	/*!
+	*	Border box
+	*/
+	.box
+		width: 100%
+		margin-left: inherit
+	
+	/*!
+	*	Pre headers
+	*/
+	.pre-header-close-btn
+		z-index: 9
+	.pre--pre-header
+		.pre-header-search
+			width: 100%
+			margin-left: inherit
+	.vah-header
+		.header-caption
+			h2
+				font-size: round($header-caption-fs / 1.5)
+		.header-arrow-mouse
+			display: none
+
+	/*!
+	*	Navbar menubar responsive style
+	*/
+	.vah-navbar,
+	.vah-navbar.vah-navbar-stick,
+	.vah-navbar.stick.vah-navbar-stick
+		z-index: 999
+		.main-menu
+			display: none
+			.menu-items
+				overflow-x: hidden
+				overflow-y: auto
+				display: block
+				max-height: 85vh
+				>li.mega-menu.mega-1-column,
+				>li.mega-menu.mega-2-column,
+				>li.mega-menu.mega-3-column,
+				>li.mega-menu.mega-4-column,
+				>li.mega-menu.mega-5-column
+					position: relative
+					ul.submenu
+						width: 100%
+				>li
+					width: 100%
+					padding: 0
+					display: block
+					user-select: none
+					-moz-user-select: none
+					-webkit-user-select: none
+					-ms-user-select: none
+					>a
+						padding: 10px 5px
+						width: 100%
+						display: inline-block
+						&:before,
+						&:after
+							display: none
+					ul.submenu
+						position: relative
+						padding: 0
+						margin-left: 20px
+						width: 100%
+						box-shadow: none
+						border: none
+						^[-1]:hover ^[4..-1]
+							display: none
+						>li
+							width: 100% !important
+							float: left
+						li.menu-dropdown
+							position: relative
+							.menu-dropdown-list
+								position: inherit
+								left: 0 !important
+								margin-left: 20px
+								margin-right: 20px
+							&:hover .menu-dropdown-list
+								display: none
+							i
+								float: inherit
+								margin-top: 15px
+	
+	/*!
+	*	Navbar / Menubar transparent
+	*/
+	.vah-navbar.navbar-transparent
+		z-index: 999
+		position: fixed
+		background: rgba(0, 0, 0, .9)
+	
+	/*
+	* Navbar / Menubar Large
+	*/
+	.vah-navbar.vah-navbar-large
+		.main-menu
+			.menu-items
+				>li
+					padding: 0
+					>a
+						padding: 10px
+
+	/*!
+	*	Header caption
+	*/
+	.vah-header
+		.header-content
+			.header-caption
+					h2
+						font-size: round($header-caption-fs / 1.5)
+	
+	/*!
+	*	********** About us page **********
+	*/
+	/*!
+	*	Our mission
+	*/ 
+	.our-mission
+		.our-mission-right
+			position: relative
+			display: inline-block
+			.vah-list
+				width: 90%
+				margin-left: 5%
+	/*!
+	*	Our vision
+	*/
+	.our-vision
+		.our-vision-right
+			margin-left: 0
+		.our-vision-left
+			position: relative
+			left: 0
+			display: inline-block
+			.vah-list
+				width: 90%
+				margin-left: 5%
+
+	/*!
+	*	Blog page / box
+	*/
+	.blog-box
+		margin-bottom: 15px
+	
+	/*!
+	* Contact page side panel
+	*/
+	.vah-contact-right
+		border-top: 2px solid $primary-clr
+		border-left: none
+
+	/*!
+	*	Footer center
+	*/
+	.cr-footer
+		text-align: center
+	
+	/*!
+	*	Footer CTA(before footer links)
+	*/
+	.vah-contact-cta
+		.vah-content-cta-cols
+			border-bottom: 1px solid #CCC
+			min-height: 100px
+			.vah-contact-cta-title
+				font-size: round($contact-cta-fs / 1.25)
+			.vah-contact-cta-icon
+				bottom: -10px
+				font-size: round($cta-content-icon-size / 2) !important
+			&:hover .vah-contact-cta-icon
+				transform: scale(1)
+				bottom: 0
+
+@media (max-width: 1024px)
+	/*!
+	*	Upto medium screen
+	*/
+	.vah-header
+		background-size: 100% 100%
+	/*!
+	*	Navbar / Menu
+	*/
+	.vah-navbar,
+	.vah-navbar.stick.vah-navbar-stick
+		.main-menu
+			.menu-items
+				>li
+					>a
+						padding-left: 4px !important
+						padding-right: 4px !important
+
+@media (min-width: 767px) and (max-width: 1200px)
+	/*!
+	*	Landscape / Medium
+	*/
+	/*!
+	*	Menubar
+	*/
+	.vah-navbar,
+	.vah-navbar.stick.vah-navbar-stick
+		.main-menu
+			.menu-items
+				>li.mega-menu.mega-4-column
+					ul.submenu
+						min-width: 100% !important
+				>li.mega-menu.mega-5-column
+					ul.submenu
+						min-width: 100% !important

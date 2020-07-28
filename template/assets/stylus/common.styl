@@ -1,0 +1,2126 @@
+/*!
+* Text gradient css
+*/
+.txt-gradient
+	background: $gradient-color1
+	background: -webkit-linear-gradient(left, $gradient-color1, $gradient-color2)
+	background: -moz-linear-gradient(left, $gradient-color1, $gradient-color2)
+	background: linear-gradient(left, $gradient-color1, $gradient-color2)
+	-webkit-background-clip: text
+	background-clip: text
+	-webkit-text-fill-color: transparent
+
+/*!
+* Text gradient reverse
+*/
+.txt-gradient-reverse
+	background: $gradient-color2
+	background: -webkit-linear-gradient(left, $gradient-color2, $gradient-color1)
+	background: -moz-linear-gradient(left, $gradient-color2, $gradient-color1)
+	background: linear-gradient(left, $gradient-color2, $gradient-color1)
+	-webkit-background-clip: text
+	background-clip: text
+	-webkit-text-fill-color: transparent
+
+/*!
+* Background gradient css
+*/
+.gradient-primary
+	background: -webkit-linear-gradient( $primary-clr, $hover-clr)
+	background: -moz-linear-gradient( $primary-clr, $hover-clr)
+	background: linear-gradient( $primary-clr, $hover-clr)
+	-webkit-background-clip: text
+	background-clip: text
+	-webkit-text-fill-color: transparent
+	text-fill-color: transparent
+
+/*!
+* ******** Custom text gradient css ********
+*/
+vah-txt-gradient($direction, $clr1, $clr2)
+	background: $color1
+	background: -webkit-linear-gradient($direction, $clr1, $clr2)
+	background: -moz-linear-gradient($direction, $clr1, $clr2)
+	background: linear-gradient($direction, $clr1, $clr2)
+	-webkit-background-clip: text
+	background-clip: text
+	-webkit-text-fill-color: transparent
+
+/*!
+* simple gradient
+*/
+.gradient
+	background: $gradient-color1
+	background: -webkit-linear-gradient(to right, $gradient-color1, $gradient-color2)
+	background: -moz-linear-gradient(to right, $gradient-color1, $gradient-color2)
+	background: linear-gradient(to right, $gradient-color1, $gradient-color2)
+
+/*!
+* Dark overlay
+*/
+.vah-theme-overlay
+	background: -webkit-linear-gradient(to right, rgba($gradient-color1, .5), rgba($gradient-color1, .5))
+	background: -moz-linear-gradient(to right, rgba($gradient-color1, .5), rgba($gradient-color1, .5))
+	background: linear-gradient(to right, rgba($gradient-color1, .5), rgba($gradient-color2, .5))
+
+/*!
+* Background image gradient
+*/
+.vah-awesome-gradient
+	background: url(../images/parallax-bg.jpg)
+	background-size: 100%
+	background-position: center
+	-webkit-background-clip: text
+	background-clip: text
+	-webkit-text-fill-color: transparent
+	animation-name: vah-awesome-animation
+	animation-duration: 60s
+	animation-iteration-count: infinite
+	animation-timing-function: linear
+
+/*!
+* Header Moving Animation 
+*/
+@keyframes vah-awesome-animation
+	0%
+		background-position-x: 0px 
+	50%
+		background-position-x: -160px
+	100%
+		background-position-x: 0
+
+
+/*!
+* =======================================================
+* *********** General common theme properties ***********
+* ======================================================= 
+*/
+
+/*!
+* Default theme settings 
+*/
+.vah-theme
+	width: 100%
+	height: 100%
+	display: none
+
+/*!
+* Box layout 
+*/
+.vah-box
+	background: url('../images/box-bg.png')
+	background-attachment: fixed
+	.vah-theme
+		background: #FFFFFF
+		overflow: hidden
+		border-left: 1px solid #CCC
+		border-right: 1px solid #CCC
+		width: $box-width
+		position: relative
+		margin: auto
+
+.vah-msg-box
+	margin: 10px
+	border: 1px solid #CCC
+	padding: 20px
+	border-radius: 3px
+	box-shadow: 0 5px 10px -5px #333
+/*!
+* Theme section
+*/
+.vah-section
+	background: #FFFFFF
+	.vah-section-padding
+		padding: 2.5rem 0
+
+/*!
+* To align div center using flexbox
+*/
+.vertical-center
+	display: flex
+	justify-content: center
+	flex-direction: column
+
+/*!
+* To align div center in absolute pos
+*/
+.vah-relative-center
+	position: absolute
+	top: 0
+	bottom: 0
+	left: 0
+	right: 0
+	margin: auto
+
+
+/*!
+** ********* Colors and backgrounds ***********
+*/
+
+/*!
+* Themme primary color
+*/
+.vah-primary-clr
+	color: $primary-clr
+/*!
+* Theme primary background
+*/
+.vah-primary-bg
+	background: $primary-clr
+/*!
+* Gray background
+*/
+.gray-bg
+	background: #FAFAFA
+/*!
+* Light white background
+*/
+.white-bg
+	background: #FFF
+/*!
+* Dark black background
+*/
+.dark-bg
+	background: #000
+/*!
+* White color title
+*/
+.vah-clr-lite
+.vah-title.vah-clr-lite
+	color: #FFFFFF
+/*!
+* White color background
+*/
+.vah-bg-lite
+	background: #FFFFFF
+/*!
+* Dark color
+*/
+.vah-clr-dark
+	color: #1C1C1C
+/*!
+* Dark background
+*/
+.vah-bg-dark
+	background: #1C1C1C
+/*!
+* Gray color
+*/
+.vah-clr-gray
+	color: #6C6F6F !important
+
+/*!
+* Line and underline
+*/
+.underline
+	border-bottom: 1px solid #999
+	padding-bottom: 5px
+.hr-line-break
+	height: 1px
+	margin-top: 15px
+	margin-bottom: 15px
+	border-bottom: 1px solid #CCC
+.line-w
+	border-bottom: 1px solid white
+	padding-bottom: 5px
+
+
+
+/*!
+********* Fonts & labels ***********
+*/
+
+/*!
+* Paragraph
+*/
+.vah-text
+	font-family: $primary-ff
+	color: #6B7770
+/*!
+* Paragraph white
+*/
+.vah-text-white
+	font-family: $primary-ff
+	color: #FFFFFF
+/*!
+* Label
+*/
+.vah-label
+	font-family: $primary-ff
+	font-size: $label-size
+	color: #6B7770
+	font-weight: 600
+/*!
+* Mdeium header
+*/
+.vah-header-title
+	font-family: $primary-ff
+	color: white
+	font-weight: normal
+	font-size: 25px
+/*!
+* Large title
+*/
+.vah-large
+	font-family: $primary-ff
+	font-style: italic
+	font-size: 65px
+	color: $primary-clr
+/*!
+* Extra large title
+*/
+.vah-extra-large-title
+	@extend .vah-awesome-gradient
+	font-size: $extra-large-title-size
+	font-family: $primary-ff
+/*!
+* Theme title
+*/
+.vah-title
+	font-family: $primary-ff
+	font-weight: lighter
+	color: #363636
+	font-size: $title-size
+/*!
+* Small title
+*/
+.vah-small-title
+	font-family: $primary-ff
+	color: #6B7770
+/*!
+* Main heading
+*/
+.vah-heading
+	color: #6B7770
+	text-align: center
+	font-family: $primary-ff
+	font-weight: lighter
+	position: relative
+	margin-bottom: 30px
+	font-size: $heading-size
+	&:after
+		padding-top: 10px
+		border-bottom: 1px solid lighten(@color, 40%)
+		position: absolute
+		width: 40px
+		height: 40px
+		content: " "
+		bottom: 0
+		left: 0
+		right: 0
+		bottom: -10px
+		margin: auto
+/*!
+* White heading
+*/
+.vah-heading.vah-heading-white
+	color: white
+/*!
+* Main heading / Breadcrumb heading
+*/
+.vah-main-heading
+	box-shadow: 0 5px 5px -5px rgba(0,0,0,0.2) inset
+	background: url(../images/box-bg.png)
+	border-bottom: 1px solid #CCC
+	margin: 0 auto
+	position: relative
+	min-height: $breadcrump-height
+/*!
+* Breadcrumb title & down arrow
+*/
+	.vah-heading-arrow
+		// @extend .vertical-center
+		display: table
+		position: relative
+		min-height: $breadcrump-height
+		&:after,
+		&:before
+			top: 100%
+			left: 20px
+			border: solid transparent
+			content: " "
+			height: 0
+			width: 0
+			position: absolute
+		&:after
+			border-top-color: $light-bg
+			border-width: 18px
+			margin-left: -18px
+		&:before
+			border-top-color: #CCC
+			border-width: 20px
+			margin-left: -20px
+		.vah-main-title
+			height: $breadcrump-height
+			display: table-cell
+			vertical-align: middle
+	.vah-main-heading-center
+		height: $breadcrump-height
+		display: table
+		.vah-breadcrump
+			display: table-cell
+			vertical-align: middle
+			height: $breadcrump-height
+/*!
+* Breadcrumb title
+*/
+	.vah-main-title
+		font-family: $primary-ff
+		font-size: $breadcrump-title-size
+		font-weight: 600
+		@extend .gradient-primary
+/*!
+* Breadcrumb list
+*/
+	.vah-breadcrump
+		ul
+			list-style: none
+			li
+				display: inline
+				&:last-child
+					&:after
+						content: " "
+					a
+						color: #999
+						pointer-events: none
+				&:after
+					content: " /"
+					color: #696969
+				a
+					text-decoration: none
+					font-family: $primary-ff
+					color: #696969
+					padding-bottom: 5px
+					transition: $transition
+					&:hover
+						color: #636363
+						box-shadow: 0 -1px 0 0 #999 inset
+
+/*!
+* Scroll to top 
+*/
+.scroll-to-top
+	position: fixed
+	display: none
+	text-decoration: none
+	text-align: center
+	right: -1px
+	bottom: 40px
+	z-index: 9999
+	outline: none
+	font-family: $primary-ff
+	font-size: 14px
+	i
+		display: inline-block
+		border: 1px solid #FFFFFF
+		background: #3C3C3C
+		color: white
+		font-size: 18px
+		width: 35px
+		height: 35px
+		line-height: 35px
+
+/*!
+* =======================================================
+* *********** Form & General Elements ... ***********
+* ======================================================= 
+*/
+
+/*!
+* Image responsive
+*/
+.vah-img-responsive
+	width: 100%
+
+/*!
+* Input type text
+*/
+.input
+	border: 2px solid #CCC
+	width: 100%
+	height: $input-height
+	padding: 10px
+	font-family: $primary-ff
+	outline: none
+	box-shadow: 0 ( $input-height / 2 ) 0 $light-bg inset, 0 (-( $input-height / 2 )) $light-bg inset
+	transition: $transition
+	&:hover
+		border-color: #999
+	&:focus
+		box-shadow: none
+		border-color: $primary-clr
+
+/*!
+* Input groups
+*/
+.vah-group
+	position: relative
+	font-size: 15px
+	.vah-group-top-icon
+		top: 23px
+	.txtarea
+		min-height: $txtarea-height
+	.input.txtarea
+		box-shadow: 0 ( $txtarea-height / 2 ) 0 $light-bg inset, 0 (-( $txtarea-height / 2 )) $light-bg inset
+		&:focus
+			box-shadow: none
+	.input
+		padding-left: 30px
+	.input.input-5p
+		padding: 5px
+	i
+		font-size: 15px
+		position: absolute
+		color: #666
+		left: 10px
+		top: 50%
+		transform: translate(0 , ( -50% + ( @font-size / 2 ) ) )
+	i.vah-i-right
+		left: inherit
+		right: 10px
+
+/*!
+* Textarea
+*/
+.txtarea
+	height: 140px
+	box-shadow: 0 ( 140px / 2 ) 0 $light-bg inset, 0 (-( 140px / 2 )) $light-bg inset
+	resize: none
+
+.box-500
+	max-width: 500px
+	text-align: justify
+.box-800
+	max-width: 800px
+	text-align: justify
+
+/*!
+* Theme button
+*/
+.btn
+	background: $primary-clr
+	color: white
+	border: 1px solid transparent
+	height: $btn-height
+	line-height: ($btn-height - 2)
+	border-radius: 3px
+	display: inline-block
+	padding: 0 30px
+	font-family: $primary-ff
+	text-decoration: none
+	cursor: pointer
+	transition: ($transition + .2)
+	outline: none
+	&:hover
+		box-shadow: 0 ($btn-height) 0 white inset, 0 0 -($btn-height) 0 white inset
+		border-color: $hover-clr
+		color: $hover-clr
+
+/*!
+* Default button
+*/
+.btn.btn-default
+	background: #CCC
+	color: #333
+	&:hover
+		border-color: #CCC
+
+/*!
+* Danger(dark red) button
+*/
+.btn.btn-danger
+	background: #B22222
+	&:hover
+		border-color: #B22222
+		color: #B22222
+
+/*!
+* Button inverted(black)
+*/
+.btn.btn-invert
+	background: #1C1C1C
+	&:hover
+		border-color: #1C1C1C
+		color: #1C1C1C
+
+/*!
+* List style
+*/
+.vah-list
+	list-style: none
+	li
+		font-family: $primary-ff
+		color: #6B7770
+		&:before
+			content: '✓ '
+			font-size: 18px
+
+/*!
+* Alert messages
+*/
+.alert
+	width: 100%
+	border: 1px solid #CCC
+	background: #F5F7F9
+	padding: 10px
+	font-family: $primary-ff
+	color: #6B7770
+	border-radius: 3px
+	position: relative
+	padding-right: 30px
+	.alert-close
+		position: absolute
+		font-size: 18px
+		right: 10px
+		cursor: pointer
+
+/*!
+* Theme alerts
+*/
+.alert.alert-primary
+	border-color: darken($primary-clr, 30%)
+	background-color: $primary-clr
+	color: #FFFFFF
+
+/*!
+* Success alerts(green)
+*/
+.alert.alert-success
+	border-color: darken(#228B22, 30%)
+	background-color: #228B22
+	color: #FFFFFF
+
+/*!
+* Danger alerts(red)
+*/
+.alert.alert-danger
+	border-color: darken(#B22222, 30%)
+	background-color: #B22222
+	color: #FFFFFF
+
+/*!
+* Inverted alerts(black)
+*/
+.alert.alert-inverse
+	border-color: darken(#2C2C2C, 30%)
+	background-color: #2C2C2C
+	color: #FFFFFF
+
+/*!
+* Custom tooltip properties
+*/
+[data-tooltip]:after
+[data-tooltip]:before
+	transition: $transition
+	font-family: $primary-ff
+
+/*!
+* Social Icons
+*/
+.social-icons
+	i
+		width: 40px
+		height: 40px
+		display: inline-block
+		cursor: pointer
+		text-align: center
+		line-height: 40px
+		color: white
+		border-radius: 40px
+		transition: $transition
+		margin-right: 5px
+		&:hover
+			transform: scale(1.1)
+			border-radius: 0
+	.mdi-facebook
+		background: #3b5998
+	.mdi-twitter
+		background: #1da1f2
+	.mdi-google-plus
+		background: #dd4b39
+	.mdi-linkedin
+		background: #0077b5
+
+/*!
+* Preloader css
+*/
+.pre-loader
+	display: table
+	height: 100vh
+	position: fixed
+	left: 0
+	right: 0
+	.pre-loader-bg
+		margin: 0 auto
+		display: table-cell
+		vertical-align: middle
+		width: 100vw
+		text-align: center
+		h2
+			@extend .txt-gradient
+			display: inline-block
+			-webkit-background-clip: text
+			background-clip: text
+			-webkit-text-fill-color: transparent
+			font-family: $primary-ff
+			font-size: 3.5rem
+			font-weight: 800
+/*! Loading dot aniation */
+			.vah-loader-dot
+				float: right
+				animation-name: dot-animation-1
+				-webkit-animation-name: dot-animation-1
+				animation-duration: 1s
+				-webkit-animation-duration: 1s
+				animation-iteration-count: infinite
+				-webkit-animation-iteration-count: infinite
+
+/*!
+* Loading animation type 1
+*/
+
+@keyframes dot-animation-1
+	0%
+		margin-top: 0
+	50%
+		margin-top: -10px
+	100%
+		margin-top: 0
+
+@-webkit-keyframes dot-animation-1
+	0%
+		margin-top: 0
+	50%
+		margin-top: -10px
+	100%
+		margin-top: 0
+
+/*!
+* *********** Vah Animations ***********
+*/
+.vah-animated
+	visibility: hidden
+
+/*!
+* Animation delay class
+*/
+.vah-delay-03
+	animation-delay: .3s
+	-webkit-animation-delay: .3s
+.vah-delay-05
+	animation-delay: .5s
+	-webkit-animation-delay: .5s
+.vah-delay-06
+	animation-delay: .6s
+	-webkit-animation-delay: .6s
+
+.vah-content
+	margin-top: 20px
+
+
+
+/*!
+* *********** Logo ***********
+*/
+/*!
+* Logo center
+*/
+.vah-navbar-container
+	position: relative
+	.vah-logo-v-center
+		position: absolute
+		top: 50%
+		transform: translateY(-50%)
+/*!
+* Default logo title
+*/
+.vah-logo-lite
+	color: #FFFFFF
+	font-family: $primary-ff, sans-serif
+	display: inline-block
+	font-weight: 700
+
+/*!
+* Dark logo
+*/
+.vah-logo-dark
+	color: #1C1C1C
+	font-family: $primary-ff, sans-serif
+	display: inline-block
+	font-weight: 700
+
+/*!
+* Default logo
+*/
+.vah-logo
+	font-family: $primary-ff, sans-serif
+	@extend .txt-gradient
+	display: inline-block
+	font-weight: 800
+	// transition: $transition
+	cursor: pointer
+	-webkit-user-select: none
+	-moz-user-select: none
+	-ms-user-select: none
+	user-select: none
+	&:hover
+		@extend .txt-gradient-reverse
+
+/*!
+* Transparent logo
+*/
+.vah-navbar.navbar-transparent
+	.vah-logo-v-center
+		.vah-logo
+			-webkit-background-clip: inherit
+			background: transparent
+			color: #FFFFFF
+			-webkit-text-fill-color: #FFFFFF
+			text-shadow: 0 0 2px #333
+
+/*!
+* Box
+*/
+.box
+	width: 40%
+	margin-left: 30%
+
+.anim-time
+	animation-duration: 0.2s
+
+/*!
+* Hero unit header & bg
+*/
+.vah-header
+	background-image: url('../images/slider/slide_1.jpg')
+	// background-repeat: no-repeat
+	background-size: 120% auto
+	min-height: 100vh
+	position: relative
+	animation-name: vah-awesome-animation
+	animation-duration: 15s
+	animation-iteration-count: infinite
+	animation-timing-function: linear
+	&:before
+		background: rgba(0, 0, 0, .65)
+		height: 100%
+		width: 100%
+		content: " "
+		position: absolute
+		box-shadow: 0 -90px 45px -45px #fff inset
+	
+/*!
+* Header caption and content
+*/
+	.header-content
+		position: absolute
+		top: 50%
+		transform: translate(0, -50%)
+		width: 100%
+		text-align: center
+		.header-caption
+			z-index: 9
+			h2
+				color: white
+				font-family: $primary-ff
+				font-weight: 300
+				font-size: $header-caption-fs
+				text-shadow: 1px 1px 3px #333
+				span
+					border-bottom: 1px solid white
+
+/*!
+* Go to next(about) section on mouse click
+*/
+.vah-to-next-ico
+	position: relative
+	.header-arrow-mouse
+		position: absolute
+		display: block
+		width: 100%
+		text-decoration: none
+		left: 0
+		right: 0
+		text-align: center
+		bottom: 70px
+		a
+			text-decoration: none
+		i
+			text-shadow: 1px 1px 4px #262626
+			color: white
+			font-size: 30px
+			bottom: 10px
+			text-decoration: none
+			transition: $transition
+			&:hover
+				text-shadow: 1px 3px 7px #000
+
+
+/*!
+* CTA hero/slider button
+*/
+.vah-gs-btn
+	border: 2px solid white
+	border-radius: 3px
+	background: transparent
+	padding: 12px 50px
+	text-decoration: none
+	color: white
+	font-size: 18px
+	font-family: $primary-ff
+	text-transform: uppercase
+	cursor: pointer
+	transition: 0.3s
+	display: inline-block
+	&:hover
+		box-shadow:  0 0 0 8px #FFFFFF, 0 30px 5px 0 #FFFFFF inset, 0 -30px 5px 0 #FFFFFF inset
+		color: $cta-color
+		border-color: transparent
+
+/*!
+* Slider header custom CSS
+*/
+.vah-slider-header
+	min-height: 100vh
+	position: relative
+	background-size: 100%
+	display: table
+	width: 100%
+	.vah-slider-content
+		position: relative
+		display: table
+		width: 100%
+		height: 100%
+		.vah-slider-inner
+			display: table-cell
+			font-size: 40px
+			font-weight: 600
+			text-shadow: 1px 1px 3px #000
+			vertical-align: middle
+			text-align: center
+			color: #FFFFFF
+			font-family: $primary-ff
+
+/*!
+* Slider custom CSS
+*/
+.vah-slider
+	display: table
+	width: 100%
+	overflow: hidden
+	.vah-slider-slide
+		&:before
+			@extend .vah-theme-overlay
+			height: 100%
+			width: 100%
+			content: " "
+			position: absolute
+			box-shadow: 0 -100px 45px -45px #fff inset
+		.vah-slider-content
+			position: relative
+			width: 100%
+			height: 100%
+			display: flex
+			flex-direction: column
+			align-items: center
+			justify-content: center
+			text-align: center
+			.vah-gs-btn
+				display: inline-block
+				margin-top: 30px
+			.vah-slider-title
+				letter-spacing: 1px
+				display: inline-block
+				font-family: $primary-ff, sans-serif
+				font-weight: 800
+				font-size: $header-caption-fs
+				text-shadow: 1px 1px 3px #333
+				text-align: center
+				color: #FFFFFF
+				span
+					border-bottom: 1px solid #FFFFFF
+/*!
+* Slider nvigations (next / prev buttons)
+*/
+	.vah-slider-actions
+		position: absolute
+		top: 50%
+		transform: translateY(-50%)
+		width: 100%
+		.vah-slider-next-btn,
+		.vah-slider-prev-btn
+			position: absolute
+			background: rgba(0, 0, 0, .75)
+			width: $vah-slider-arrow-size
+			height: $vah-slider-arrow-size
+			line-height: $vah-slider-arrow-size
+			border-radius: $vah-slider-arrow-size
+			text-align: center
+			cursor: pointer
+			i
+				color: #FFFFFF
+				font-size: 30px
+		.vah-slider-next-btn
+			right: 0
+			margin-right: -($vah-slider-arrow-size/2)
+			padding-right: ($vah-slider-arrow-size/3)
+		.vah-slider-prev-btn
+			left: 0
+			margin-left: -($vah-slider-arrow-size/2)
+			padding-left: ($vah-slider-arrow-size/3)
+
+.toggle-menu-icon
+	display: none
+
+/*!
+* ******** About section Home page *******
+*/
+
+/*!
+* Box design
+*/
+.vah-fi-box
+	.vah-fi
+		position: relative
+		overflow: hidden
+		width: 200px
+		height: 100px
+		border-bottom: 1px solid #CCC
+		box-shadow: 0 -2px 1px -1px #CCC inset
+		margin-left: auto
+		margin-right: auto
+		i
+			position: absolute
+			text-align: center
+			width: 80px
+			height: 80px
+			line-height: 80px
+			border: 1px solid #999
+			bottom: -30px
+			left: 0
+			right: 0
+			margin: auto
+			border-radius: 100%
+			transition: 0.2s
+			&:before
+				color: #636363
+				font-size: 45px
+	&:hover .vah-fi
+		box-shadow: none
+	&:hover .vah-fi i
+		bottom: -17px
+	&:hover .vah-fi i:before
+		@extend .gradient-primary
+
+/*!
+* Feature section (home page)
+*/
+.vah-features
+	padding: 10px 0
+	background: $light-bg
+	box-shadow: 0 0 3px #666 inset
+	.vah-features-block
+		.vah-feature-icon
+			text-align: center
+			font-size: 50px
+			color: #666
+			transition: $transition
+		&:hover .vah-feature-icon
+			transform: scale(1.1)
+			@extend .gradient-primary
+		.vah-feature-content
+			font-family: $primary-ff
+			color: #666
+
+/*!
+* CTA Button(home page)
+*/
+.vah-cta
+	@extend .gradient
+	white-space: nowrap
+	display: table
+	width: 100%
+	padding: 4em 0
+	.vah-cta-v-center
+		display: table-cell
+		vertical-align: middle
+		.vah-cta-title
+			font-family: $primary-ff
+			font-size: $cta-title-size
+			font-weight: lighter
+			color: white
+		.vah-cta-btn
+			background: transparent
+			border: 1px solid white
+			color: white
+			text-decoration: none
+			-webkit-apperance: button
+			height: 50px
+			padding: 0 60px
+			font-family: $primary-ff
+			cursor: pointer
+			border-radius: 3px
+			transition: $transition
+			position: relative
+			outline: none
+			display: table-cell
+			vertical-align: middle
+			&:after
+				padding-left: 20px
+				position: absolute
+				font-family: "Material Design Icons"
+				content: "\F054"
+				color: white
+				font-size: 20px
+				opacity: 0
+				transition: $transition
+			&:hover
+				background: white
+				color: #363636
+			&:hover:after
+				opacity: 1
+				color: #333
+				padding-left: 12px
+
+/*!
+* CTA Div general
+*/
+.vah-contact-cta
+	background: #F5F7F9
+	border: 1px solid #CCC
+	.vah-content-cta-cols
+		border-right: 1px solid #CCC
+		border-left: 1px solid #CCC
+		min-height: 125px
+		margin-left: -1px
+		position: relative
+		overflow: hidden
+		display: flex
+		justify-content: center
+		align-items: center
+		text-decoration: none
+		&:hover
+			// background: lighten($primary-clr, 95%)
+		.vah-contact-cta-icon
+			color: #CCC
+			font-size: $cta-content-icon-size
+			font-family: 'PT Sans', sans-serif
+			position: absolute
+			right: 0
+			bottom: -30px
+			transition: $transition
+		.vah-contact-cta-title
+			text-align: center
+			font-family: $primary-ff
+			font-weight: 500
+			font-size: $contact-cta-fs
+			color: #666
+			transition: $transition
+			i
+				font-size: 40px
+		&:hover .vah-contact-cta-title
+			@extend .txt-gradient
+		&:hover .vah-contact-cta-icon
+			transform: scale(1.2)
+			bottom: 0
+			color: #969696
+
+/*!
+* Responsive layout info div(home page)
+*/
+.vah-responsive
+	background: url(../images/parallax-bg.jpg)
+	background-size: 100%
+	background-attachment: fixed
+	background-position: center
+	color: white
+	font-family: $primary-ff
+	.vah-responsive-center
+		padding: 30px
+		background: rgba(0, 0, 0, .7)
+		display: flex
+		align-items: center
+		justify-content: center
+		.vah-responsive-left
+			float: left
+			overflow: hidden
+			text-align: right
+			border-right: 1px solid white
+			margin-right: -1px
+			.vah-responsive-left-inside
+				width: 100%
+				float: right
+				padding-right: 30px
+				i
+					text-align: center
+					font-size: 70px
+					margin: 0 20px
+				// 
+			// overflow: hidden
+		.vah-responsive-right
+			overflow: hidden
+			border-left: 1px solid white
+			// overflow: hidden
+			.vah-responsive-right-inside
+				padding: 15px
+				border: 1px solid #FFF
+				border-left: none
+				border-radius: 0 3px 3px 0
+				margin: 15px 0
+				.vah-responsive-list-point
+					margin-left: 10px
+					li
+						color: white
+						font-family: $primary-ff
+						font-size: 18px
+
+/*!
+* Special features div(home page)
+*/
+.vah-special-center
+	text-align: center
+	padding-top: 20px
+	overflow: hidden
+	.vah-special-box
+		text-align: center
+		width: 100px
+		height: 100px
+		display: inline-block
+		position: relative
+		&::after
+			position: absolute
+			@extend .gradient
+			left: 0
+			top: 0
+			content: ""
+			width: 100%
+			height: 100%;
+			transform: rotate(45deg)
+			border-radius: 3px
+			transition: .5s
+			z-index: -1
+		img
+			position: absolute
+			color: white
+			width: 40px
+			top: 50%
+			left: 0
+			right: 0
+			margin: 0 auto
+			transform: translateY(-50%)
+			transition: .5s
+	&:hover .vah-special-box:after
+		transform: rotate(0)
+
+/*!
+* Numners
+*/
+.vah-numbers
+	background: url(../images/parallax-bg.jpg)
+	background-attachment: fixed
+	background-position: center
+	box-shadow: 0 0 5px 1px #333 inset
+	.vah-number-inside
+		background: rgba(0, 0, 0, .75)
+		.vah-number-digit
+			vah-txt-gradient(top, $gradient-color1, $gradient-color2)
+			display: inline-block
+			label
+				font-size: 60px
+				font-family: $primary-ff
+				font-weight: 600
+		.vah-number-title
+			font-family: $primary-ff
+			font-weight: 400
+			font-size: 23px
+			color: #FCFCFC
+
+/*!
+* 404 page design
+*/
+.vah-404
+	font-family: 'Source Sans Pro', sans-serif
+	font-weight: 700
+	@extend .txt-gradient
+	display: inline-block
+	font-size: 100px
+
+
+/*!
+* ********* About page design **********
+*/
+
+/*!
+* *********** About who design ***********
+*/
+.vah-who
+	.vah-who-we
+		background: #F5F7F9
+		min-height: 180px
+		.vah-who-cols
+			border-right: 1px solid #CCC
+			border-left: 1px solid #CCC
+			min-height: 180px
+			margin-left: -1px
+			position: relative
+			overflow: hidden
+			display: flex
+			justify-content: center
+			align-items: center
+			&:hover
+				// background: lighten($primary-clr, 95%)
+			.vah-who-number
+				color: #CCC
+				font-size: 80px
+				font-family: $primary-ff
+				font-weight: 300
+				position: absolute
+				right: 0
+				bottom: -30px
+				transition: $transition
+			.vah-who-title
+				font-family: $primary-ff
+				font-weight: 500
+				font-size: 28px
+				color: #666
+				transition: $transition
+			&:hover .vah-who-title
+				@extend .txt-gradient
+			&:hover .vah-who-number
+				transform: scale(1.2)
+				bottom: 0
+				color: #969696
+
+/*!
+* Client section(about page)
+*/.vah-client
+	.vah-client-logo
+		overflow: hidden
+		&:hover .vah-client-img
+			-webkit-filter: grayscale(100%)
+			filter: grayscale(100%)
+		.vah-client-img
+			-webkit-filter: grayscale(70%)
+			filter: grayscale(70%)
+			max-width: 100px
+			text-align: center
+			cursor: pointer
+			transition: $transition
+			&:hover
+				-webkit-filter: grayscale(0)
+				filter: grayscale(0)
+
+/*!
+* Team section(about page)
+*/
+.vah-team
+	.vah-team-cols
+		background: #FCFCFC
+		border-left: 1px solid #CCC
+		border-right: 1px solid #CCC
+		padding-bottom: 20px
+		transition: $transition
+		margin: -1px
+		margin-bottom: 20px
+		img
+			width: 100%
+		.vah-team-socil
+			i
+				margin: -1px
+				display: inline-block
+				text-align: center
+				line-height: 32px
+				width: 30px
+				height: 30px
+				cursor: pointer
+				font-size: 16px
+				color: white
+				border-radius: 15px
+				transition: $transition
+				&:hover
+					border-radius: 0
+			.mdi-facebook
+				background: #3b5998
+			.mdi-twitter
+				background: #1da1f2
+			.mdi-google-plus
+				background: #dd4b39
+		&:hover
+			transform: scale(1.07)
+			background: #F5F7F9
+			box-shadow: 0 7px 7px 0 rgba(0, 0, 0, .2)
+
+/*!
+* Our mission vission section(about page)
+*/
+.our-mission
+	height: 100%
+	position: relative
+	.our-mission-title
+		width: 100%
+		color: white
+		text-align: center
+	.our-mission-left
+		img
+			margin-bottom: -4px
+			width: 100% 
+	.our-mission-right
+		position: absolute
+		right: 0
+		background: #1C1C1C
+		color: #FFFFFF
+		height: 100%
+		display: flex
+		flex-direction: column
+		justify-content: center
+		.vah-list
+			width: 60%
+			margin-left: 20%
+			li
+				font-size: 16px
+				margin-bottom: 10px
+				color: white
+
+.our-vision
+	height: 100%
+	position: relative
+	.our-vision-title
+		width: 100%
+		color: white
+		text-align: center
+	.our-vision-right
+		margin-left: 50%
+		img
+			margin-bottom: -4px
+			width: 100% 
+	.our-vision-left
+		position: absolute
+		left: 0
+		background: #1C1C1C
+		color: #FFFFFF
+		height: 100%
+		display: flex
+		flex-direction: column
+		justify-content: center
+		.vah-list
+			width: 60%
+			margin-left: 20%
+			li
+				font-size: 16px
+				margin-bottom: 10px
+				color: white
+
+/*!
+* *********** Contact us page ***********
+*/
+.vah-contact-right
+	background: $light-bg
+	border-left: 2px solid $primary-clr
+	padding: 10px
+	border-radius: 4px
+	.vah-contact-icons
+		text-align: center
+		color: #696969
+		margin-top: 3px
+
+/*!
+* *********** Services page ***********
+*/	
+.vah-service-tabs
+	.servicebar-stick
+		position: fixed
+		width: 80px
+		top:0
+		display: inline-block
+		transition: $transition
+	.vah-service-tab-link
+		z-index: 999
+		background: #F5F7F9
+		border: 1px solid #CCC
+		&:first-child
+			border-left: none
+		&:after
+			bottom: 0
+		a
+			border-left: 1px solid #CCC
+			border-right: 1px solid #CCC
+			display: inline-block
+			text-decoration: none
+			color: #696969
+			padding: 12px 30px
+			margin-right: -5px
+			transition: .3s
+			i
+				font-size: 18px
+		a:hover
+			background: #E5E7E9
+		a.active
+			background: #363636
+			color: #FFFFFF
+			border-color: #363636
+	.vah-service-tab-link.service-box-shadow
+		box-shadow: 0 3px 3px rgba(0,0,0,.20)
+	.vah-service-tab-content
+		.vah-service-content
+			// min-height: 50vh
+			display: table
+			width: 100%
+			.vah-service-content-center
+				display: table-cell
+				vertical-align: middle
+				.vah-service-list
+					list-style: none
+					font-family: $primary-ff
+					color: #6B7770
+				.vah-service-part-left
+					overflow: hidden
+					width: 25%
+					.vah-service-part-left-inside
+						float: right
+						text-align: center
+						padding-right: 50px
+						i
+							font-size: 120px
+							@extend .txt-gradient
+						.vah-step-lbl
+							font-family: $primary-ff
+							font-weight: 600
+							font-size: 25px
+							color: #666
+				.vah-service-part-right
+					overflow: hidden
+					width: 75%
+					border-left: 1px solid #CCC
+					.vah-service-part-right-inside
+						padding: 12px
+
+/*!
+* *********** Blog page **********
+*/
+
+/*!
+* Blog box(blog page 1)
+*/
+.blog-box
+	border: 1px solid rgba(0, 0, 0, .2)
+	border-radius: 3px
+	background: white
+	box-shadow: 0 2px 2px 0 rgba(0, 0, 0, .15)
+	transition: all 280ms cubic-bezier(.4,0,.2,1)
+	overflow: hidden
+	margin-bottom: 15px
+	&:hover
+		box-shadow: 0 10px 15px rgba(0,0,0,.2)
+	img
+		transition: $transition
+	&:hover img
+		transform: scale(1.05)
+	.blog-inside
+		padding: 5px 12px
+		a.blog-title
+			font-size: 20px
+			text-decoration: none
+			font-family: $primary-ff
+			font-weight: 600
+			color: #6B7770
+			word-break: break-word
+			transition: $transition
+			&:hover
+				color: $primary-clr
+		.blog-info
+			small
+				font-family: $primary-ff
+				color: #6B7770
+				font-style: italic
+		.blog-content
+			font-family: $primary-ff
+			color: #6B7770
+			height: 60px
+			overflow: hidden
+			text-overflow: ellipsis
+			-webkit-line-clamp: 3
+			margin: 0 auto
+		.blog-footer
+			border-top: 1px solid #CCC
+			padding: 7px 0
+			.blog-comments
+				.blog-comment-number
+					color: #6B7770
+					font-family: $primary-ff
+					text-decoration: none
+					transition: $transition
+					&:hover
+						color: #333
+			a.blog-link
+				color: $primary-clr
+				font-family: $primary-ff
+				text-decoration: none
+				padding: 5px 15px
+				border-radius: 3px
+				transition: $transition
+				&:hover
+					color: $hover-clr
+					border-bottom: 1px dashed $hover-clr	
+/*!
+* Blog list(blog page 2)
+*/
+.blog-list
+	padding: 15px 5px
+	border-bottom: 1px solid #CCC
+	transition: $transition
+	&:hover
+		background: white
+		transform: scale(1.01)
+		box-shadow: 0 10px 15px rgba(0,0,0,.2)
+	img
+		width: 100%
+	.blog-inside
+		.blog-title
+			font-family: $primary-ff
+			color: #6B7770
+			font-weight: 600
+			font-size: 25px
+			text-decoration: none
+			&:hover
+				color: $primary-clr
+		.blog-info
+			margin-top: 5px
+			small
+				font-family: $primary-ff
+				color: #6B7770
+				font-style: italic
+				margin-right: 10px
+		.blog-content
+			font-family: $primary-ff
+			color: #6B7770
+		.blog-footer
+			.blog-comments
+				color: #6B7770
+				.blog-comment-number
+					font-family: $primary-ff
+					color: #6B7770
+					text-decoration: none
+					transition: $transition
+					&:hover
+						color: #363636
+			.blog-link
+				font-family: $primary-ff
+				color: $primary-clr
+				text-decoration: none
+				&:hover
+					color: $hover-clr
+					border-bottom: 1px dashed $hover-clr
+/*!
+* Blog list right panel
+*/
+.blog-list-right-panel
+	.blog-list-small
+		padding: 0 5px
+		background: #F5F7F9
+		border-bottom: 1px solid #CCC
+		padding: 0
+		margin: 0
+		transition: $transition
+		padding: 5px
+		&:hover
+			cursor: pointer
+			background: white
+		.vah-content
+			max-height: 30px
+			overflow: hidden
+			text-overflow: ellipsis
+			white-space: nowrap
+		.blog-small-title
+			font-family: $primary-ff
+			font-size: 22px
+			font-weight: 500
+			color: #636363
+/*!
+* Blog post(blog page 3)
+*/
+.blog-post
+	.blog-inside
+		.blog-title
+			font-family: $primary-ff
+			color: #6B7770
+			font-weight: bolder
+			text-transform: uppercase
+			font-size: 25px
+			margin: 10px 0
+			text-decoration: none
+		.blog-info
+			color: #696969
+			small
+				font-family: $primary-ff
+				margin-right: 15px
+		.blog-content
+			font-family: $primary-ff
+			color: $content-clr
+		.blog-comment-number
+			font-family: $primary-ff
+			color: $content-clr
+		.blog-comment
+			border-bottom: 1px solid #CCC
+			padding: 10px 0
+			&:hover
+				background: #E5E7E9
+			.blog-comment-avatar
+				text-align: center
+				i
+					font-size: 30px
+					color: #363636
+					display: inline-block
+					border: 1px solid #9C9C9C
+					border-radius: 70px
+					width: 70px
+					height: 70px
+					line-height: 70px
+					text-align: center
+					background: #E5E7E9
+			.blogcomment-title
+				font-family: $primary-ff
+				color: #393939
+				font-style: italic
+
+/*!
+* *********** Testimonial page ***********
+*/
+.vah-testimonials
+	margin-top: 50px
+	.vah-client-testimonial
+		background: white
+		border: 1px solid #CCC
+		padding: 10px
+		box-shadow: 0 2px 2px 0 rgba(0, 0, 0, .2)
+		position: relative
+		border-bottom: 2px solid $primary-clr
+		border-radius: 3px
+		padding-top: 50px
+		text-align: center
+		transition: $transition
+		margin-bottom: 60px
+		&:hover
+			transform: scale(1.015)
+			box-shadow: 0px 10px 10px -4px rgba(0,0,0,0.5)
+		&:hover .vah-client-testimonial-avatar
+			transform: scale(1.1)
+			border-color: $primary-clr
+		.vah-client-testimonial-avatar
+			transition: $transition
+			position: absolute
+			width: 100px
+			height: 100px
+			padding: 10px
+			border: 1px solid #CCC
+			border-radius: 50px
+			background: white
+			top: -(@height / 2)
+			left: 0
+			right: 0
+			margin: 0 auto
+		.vah-testimonial-txt
+			font-family: $primary-ff
+			font-style: italic
+			color: #6B7770
+			font-size: 18px
+.vah-strong-quote
+	font-size: 35px
+
+/*!
+* *********** Portfolio page ***********
+*/
+.portfolio-tag-list
+	margin-bottom: 10px
+	list-style: none
+	text-align: center
+	>li.active
+		background: $primary-clr
+		border-color: @background
+		color: #FFFFFF
+	>li
+		border: 1px solid #CCC
+		display: inline-block
+		padding: 7px 20px
+		margin-right: -5px
+		cursor: pointer
+		transition: $transition
+		&:first-child
+			border-radius: 20px 0 0 20px
+		&:last-child
+			border-radius: 0 20px 20px 0
+		>a
+			font-family: $primary-ff
+
+/*!
+* portfolio image container
+*/
+.portfolio-img-container
+	position: fixed
+	z-index: 9999
+	top: 0
+	bottom: 0
+	left: 0
+	right: 0
+	background: rgba(0, 0, 0, .75)
+	display: none
+	img
+		max-width: 90%
+		max-height: 95%
+	.portfolio-close-container
+		cursor: pointer
+		i
+			color: white
+			font-size: 30px
+			float: right
+			margin-top: 25px
+			margin-right: 25px
+			transition: $transition
+		&:hover i
+			transform: scale(1.2) rotate(90deg)
+/*!
+* 5 column portfolio
+*/
+.portfolio.p-column-5
+	.card
+		margin: .5%
+		width: 19%
+		height: 200px
+
+/*!
+* 4 column portfolio
+*/
+.portfolio.p-column-4
+	.card
+		margin: .5%
+		width: 24%
+		height: 250px
+
+/*!
+* 2 column portfolio
+*/
+
+.portfolio.p-column-2
+	.card
+		margin: .5%
+		width: 49%
+		height: 350px
+
+/*!
+*	Portfolio & card
+*/
+
+.portfolio
+	.card
+		height: 200px
+		margin-bottom: 20px
+		width: 100%
+		box-shadow: 0 0 1px 0 rgba(0, 0, 0, .75), 0 3px 8px 1px rgba(0, 0, 0, .25)
+		padding: 5px
+		float: left
+		position: relative
+		cursor: pointer
+		border-radius: 3px
+		overflow: hidden
+		img
+			height: 100%
+			width: 100%
+			text-align: center
+		.card-inner
+			background: rgba(0, 0, 0, .75)
+			bottom: 0
+			width: 100%
+			z-index: 9
+			left: 0
+			right: 0
+			bottom: 0
+			top: calc(100% - 40px)
+			position: absolute
+			transition: $transition
+			.card-inner-title
+				color: white
+				font-family: $primary-ff
+				height: 40px
+				line-height: 41px
+		&:hover .card-inner
+			top: 0
+			.card-inner-content
+				left: 0
+				right: 0
+				position: absolute
+				top: 50%
+				transform: translate(0, -50%)
+				a
+					font-family: $primary-ff
+					text-decoration: none
+					i
+						color: #FFFFFF
+						font-size: 25px
+						width: 30px
+						height: 30px
+						display: inline-block
+
+/*
+* Portfolio Animation
+*/
+.animPort
+	-webkit-animation-name: animation-portfolio
+	animation-name: animation-portfolio
+	transform-origin: top
+
+@keyframes animation-portfolio
+	0%
+		opacity: 0
+		-webkit-transform: scale(.9) rotateY(-23deg)
+		transform: scale(.9) rotateY(-23deg)
+	50%
+		opacity: 1
+		-webkit-transform: scale(1) rotateY(0deg)
+		transform: scale(1) rotateY(0deg)
+
+@-webkit-keyframes animation-portfolio
+	0%
+		opacity: 0
+		-webkit-transform: scale(.9)
+		transform: scale(.9)
+	50%
+		opacity: 1
+		-webkit-transform: scale(1)
+		transform: scale(1)
+
+/*!
+* *********** Sample page ***********
+*/
+.sample-page
+	.page-bg
+		background: #C9C9C9
+		border-radius: 3px
+		border: 1px solid #999
+		padding: 12px
+		font-family: $primary-ff
+		text-align: center
+		h3
+			font-weight: normal
+
+/*
+* Elements & snippets
+*/
+
+/*!
+* Range slider
+*/
+.vah-progress
+	.vah-progress-group
+		label
+			font-family: $primary-ff
+			color: #6B7770
+		.vah-progress-bar-bg
+			background: #F5F7F9
+			width: 100%
+			border-radius: 10px
+			.vah-progress-bars
+				width: 0
+				font-size: 14px
+				@extend .gradient
+				border-radius: 10px
+				transition: 1.2s
+				color: #FFFFFF
+				padding: 3px
+				font-family: $primary-ff
+				text-align: center
+
+/*
+* Accordian 
+*/
+.vah-accordian
+	.vah-accordian-row
+		padding: 0 5px
+		border-bottom: 1px solid #CCC
+		transition: $transition
+		.vah-accordian-title
+			font-family: $primary-ff
+			color: #6B7770
+			cursor: pointer
+			padding: 12px 0
+			transition: $transition
+			&:before
+				font-family: "Material Design Icons"
+				content: "\F415"
+		.vah-accordian-content
+			display: none
+			padding: 12px
+			font-family: $primary-ff
+			color: #636363
+		&:hover
+			background: #F5F7F9
+	.vah-accordian-row.accordian-active
+		background: #F5F7F9
+		box-shadow: 3px 0 0 $primary-clr inset
+		transition: $transition
+		.vah-accordian-content
+			display: block
+		.vah-accordian-title
+			color: #393939
+			&:before
+				content: "\F374"
+
+/*
+* Tabs
+*/
+.vah-tabs
+	.vah-tab-list
+		list-style: none
+		border-bottom: 1px solid $primary-clr
+		padding: 0
+		margin: 0
+		li
+			display: inline-block
+			padding: 10px 20px
+			font-family: $primary-ff
+			color: #6B7770
+			border: 1px solid transparent
+			margin-bottom: -1px
+			font-weight: 600
+			cursor: pointer
+			transition: $transition
+		li.tab-active
+			pointer-events: none
+			background: transparent
+			box-shadow: 0 4px 0 $primary-clr inset
+			border-left: 1px solid $primary-clr
+			border-right: 1px solid $primary-clr
+			border-bottom: 1px solid #FFFFFF
+			border-top: 1px solid $primary-clr
+			color: $primary-clr
+	.vah-tab-body
+		.vah-tab-content
+			display: none
+			font-family: $primary-ff
+			font-size: 15px
+			color: #666
+			padding: 12px 0
+			border-bottom: 1px solid #CCC
+		.vah-tab-content.tab-content-active
+			display: block
+
+
+/*!
+* *********** Footer ***********
+*/
+.footer
+	.main-footer
+		position: relative
+		z-index: 99
+		background: #1C1C1C
+		padding: 15px 0
+		border-top: 2px solid $primary-clr
+		.vah-footer-content
+			font-family: $primary-ff
+			color: #FCFCFC
+		.vah-footer-social
+			margin-top: 10px
+			i
+				width: 40px
+				height: 40px
+				display: inline-block
+				cursor: pointer
+				text-align: center
+				line-height: 40px
+				color: white
+				border-radius: 40px
+				transition: $transition
+				margin-right: 5px
+				&:hover
+					transform: scale(1.1)
+					border-radius: 0
+			.mdi-facebook
+				background: #3b5998
+			.mdi-twitter
+				background: #1da1f2
+			.mdi-google-plus
+				background: #dd4b39
+			.mdi-linkedin
+				background: #0077b5
+/*!
+* Footer title
+*/
+		.vah-footer-title
+			vah-txt-gradient(left, $gradient-color1, $gradient-color2)
+			font-family: $primary-ff
+			font-weight: 500
+			font-size: 20px
+			border-bottom: 1px dashed #FFFFFF
+			padding-bottom: 10px
+			display: inline-block
+			margin-bottom: 10px
+		.vah-footer-list
+			list-style: none
+			li
+				padding: 3px 0
+				a
+					font-family: $primary-ff
+					color: #CCC
+					text-decoration: none
+					transition: $transition
+					&:hover
+						color: #FFFFFF
+						margin-left: 5px
+						border-bottom: 1px dashed #FFFFFF
+/*!
+* Footer subscribe div
+*/
+		.vah-footer-subscribe
+			position: relative
+			input
+				font-family: $primary-ff
+				float: left
+				height: 35px
+				border: none
+				width: 100%
+				border-radius: 20px
+				border: 1px solid transparent
+				padding-left: 15px
+				outline: none
+				box-shadow: 0 35px 0 #E5E7E9 inset, 0 -35px 0 #E5E7E9 inset
+				transition: 0.3s
+				&:focus
+					box-shadow: none
+			a
+				cursor: pointer
+				font-family: $primary-ff
+				position: absolute
+				text-decoration: none
+				right: -1px
+				height: 35px
+				line-height: 32px
+				border-radius: 0 35px 35px 0
+				border: 1px solid transparent
+				padding: 0 10px
+				background-color: $gradient-color1
+				color: white
+		.vah-footer-i-list
+			.vah-footer-lbl
+				font-family: $primary-ff
+				color: #E9E9E9
+				font-size: 17px
+				i
+					margin-right: 5px
+	.footer-gradient-line
+		height: 3px
+		@extend .gradient
+		width: 100%
+/*!
+* Footer CTA
+*/
+	.cr-footer
+		background: #030303
+		padding: 12px 0
+		.vah-footer-lbl
+			color: white
+			font-family: $primary-ff
+			font-weight: 500
+			font-size: 16px
+
+/*!
+* *********** Cross browser suppoer CSS ***********
+*/
+@import "cross-browser"

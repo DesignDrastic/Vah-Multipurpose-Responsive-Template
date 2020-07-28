@@ -1,0 +1,548 @@
+﻿<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="description" content="">
+    <meta name="HandheldFriendly" content="True">
+    <meta name="MobileOptimized" content="320">
+    <meta name="viewport" content="initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <title>Documentation - Vah HTML5 Template</title>
+    <link rel="alternate" type="application/rss+xml" title="frittt.com" href="feed/index.html">
+    <link href="http://fonts.googleapis.com/css?family=Raleway:700,300" rel="stylesheet" type="text/css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/prettify.css">
+    <link rel="icon" type="image/ico" href="img/icon-32X32.ico">
+  </head>
+  <body>
+    <div class="wrapper">
+      <nav>
+        <div class="pull-left">
+          <h1><a href="javascript:"><img src="img/icon-32X32.ico" alt="Vah" /><span>Vah Template</span></a></h1>
+        </div>
+        <div class="pull-right">
+          <a href="http://themes.techmatesofttech.com/vah/" target="_blank" class="btn btn-download"><img src="img/demo.png" width="25" alt="Vah" /> Live Demo</a>
+        </div>
+      </nav>
+      <header>
+        <div class="container">
+          <h2 class="lone-header">VahDoc - Documentation for Responsive HTML5 Template</h2>
+        </div>
+      </header>
+      <section>
+        <div class="container">
+          <ul class="docs-nav">
+            <li><strong>Getting Started</strong></li>
+            <li><a href="#welcome" class="cc-active">Welcome</a></li>
+            <li><a href="#themestructure" class="cc-active">Template Structure</a></li>
+            <li><a href="#code" class="cc-active">Code Structure</a></li>
+            <li><a href="#elements" class="cc-active">Elements</a></li>
+            <li class="separator"></li>
+            <li><strong>Customization</strong></li>
+            <li><a href="#layouts" class="cc-active">Layouts</a></li>
+            <li><a href="#menus" class="cc-active">Navigation Menu</a></li>
+            <li><a href="#slider" class="cc-active">Slider</a></li>
+            <li><a href="#animations" class="cc-active">Scroll Animations</a></li>
+            <li><a href="#coming_soon" class="cc-active">Coming Soon</a></li>
+            <li><a href="#contact_form" class="cc-active">Contact Us Form</a></li>
+            <li class="separator"></li>
+            <li><strong>Credits</strong></li>
+            <li><a href="#credits" class="cc-active">Credits</a></li>
+          </ul>
+          <div class="docs-content">
+            <h3> -: Getting Started :-</h3>
+            <h3 id="welcome"> Welcome</h3>
+            <ul>
+              <li>Features: HTML5, CSS3, Responsive, Business, Digital Agency, Custom Design</li>
+              <li>Type: HTML Template</li>
+              <li>Version: 1.0</li>
+              <li>Vah means: Wow!</li>
+            </ul>
+            <p> This documentation will teach you how to set up and use our template. If you have any questions that realted to template, please feel free to send your question on <a href="mailto:techmatesofttech@gmail.com" target="_blank">Author</a>.</p>
+            <!-- Template Structure -->
+            <h3 id="themestructure"><u>Vah Template Structure</u></h3>
+            <p>The template root folder contains the assets folder and all of the HTML pages:</p>
+            <ul>
+              <li><strong>-vah/</strong>
+                <ul>
+                  <li>
+                    <strong>-template/</strong>
+                    <ul>
+                      <li>-html/
+                        <ul>
+                          <li>
+                            assets/
+                            <ul>
+                              <li>
+                                css/
+                                <ul>
+                                  <li>animate.css</li>
+                                  <li>coming-soon.css</li>
+                                  <li>style.css</li>
+                                  <li>vah.css <small>(Custom CSS stylesheet. Recommended <strong>not to edit this file.</strong></small>)</li>
+                                </ul>
+                              </li>
+                              <li>flipclock/</li>
+                              <li>fonts/</li>
+                              <li>
+                                icons/
+                                <ul>
+                                  <li>material-design-icons/</li>
+                                  <li>simple-line-icons/</li>
+                                </ul>
+                              </li>
+                              <li>
+                                js/
+                                <ul>
+                                  <li>jquery.easing.min.js</li>
+                                  <li>jquery.min.js</li>
+                                  <li>jquery.mousewheel.min.js</li>
+                                  <li>main.js</li>
+                                  <li>modernizr-custom.js</li>
+                                </ul>
+                              </li>
+                              <li>stylus/   <small>(Dynamic CSS pre-processing files. Only for <strong>advanced</strong> developer/designer. You can delete the folder, if you do not want to use stylus. Documentation can be found <a href="http://stylus-lang.com/">here</a>.)</small></li>
+                            </ul>
+                          </li>
+                        </ul>
+                      </li>
+                      <li>-php/
+                        <ul>
+                          <li>post-contact.php</li>
+                          <li>message.php</li>
+                        </ul>
+                      </li>
+                    </ul>
+                  </li>
+                  <li>
+                    <strong>- documentation/</strong>              
+                  </li>
+                </ul>
+              </li>
+            </ul>
+            <h3 id="code"><u>Code Structure</u></h3>
+            <div class="clearfix"></div>
+            <h4>Header<small>(meta, title, stylesheets, fonts, icons):</small></h4>
+            <pre class="prettyprint">&lt;!DOCTYPE html&gt;
+&lt;html class=&quot;no-js&quot; lang=&quot;&quot;&gt;
+  &lt;head&gt;
+    &lt;meta charset=&quot;utf-8&quot;&gt;
+    &lt;meta http-equiv=&quot;x-ua-compatible&quot; content=&quot;ie=edge&quot;&gt;
+    &lt;meta name=&quot;viewport&quot; content=&quot;width=device-width, initial-scale=1&quot;&gt;
+    &lt;title&gt;Vah | HTML5 Multi-purpose Responsive Template&lt;/title&gt;
+    &lt;meta name=&quot;generator&quot; content=&quot;Responsive, Mobile-Friendly HTML5 Website Template&quot; /&gt;
+    &lt;meta name=&quot;author&quot; content=&quot;Techmate Softtech LLP&quot;&gt;
+    &lt;meta name=&quot;keywords&quot; content=&quot;html5 template, buiness template, responsive templates, website template&quot;&gt;
+    &lt;meta name=&quot;description&quot; content=&quot;Vah is the latest HTML5 template useful for any business or digital agency.&quot;&gt;
+    &lt;!-- Modernizr script --&gt;
+    &lt;script src=&quot;assets/js/modernizr-custom.js&quot;&gt;&lt;/script&gt;
+    &lt;!-- Icon fonts: Simple line icons  --&gt;
+    &lt;link rel=&quot;stylesheet&quot; href=&quot;assets/icons/simple-line-icons/css/simple-line-icons.css&quot; /&gt;
+    &lt;!-- Icon fonts: Material design icons  --&gt;
+    &lt;link rel=&quot;stylesheet&quot; href=&quot;assets/icons/material-design-icons/css/materialdesignicons.min.css&quot;&gt;
+    &lt;!-- Default css --&gt;
+    &lt;link rel=&quot;stylesheet&quot; type=&quot;text/css&quot; href=&quot;assets/css/vah.css&quot;&gt;
+    &lt;!-- Animate css --&gt;
+    &lt;link rel=&quot;stylesheet&quot; type=&quot;text/css&quot; href=&quot;assets/css/animate.css&quot;&gt;
+    &lt;!-- Theme css --&gt;
+    &lt;link rel=&quot;stylesheet&quot; type=&quot;text/css&quot; href=&quot;assets/css/style.css&quot;&gt;
+  &lt;/head&gt;</pre>
+            <h4>Body<small>(Content):</small></h4>
+            <pre class="prettyprint"> &lt;body class=&quot;vah-body&quot;&gt;
+    &lt;!-- Scroll top btn --&gt;
+    &lt;a href=&quot;#&quot; class=&quot;scroll-to-top vah-smooth-link&quot; data-tooltip=&quot;Go to top!&quot; data-tooltip-placement=&quot;left&quot;&gt;
+      &lt;i class=&quot;mdi mdi-chevron-up&quot;&gt;&lt;/i&gt;
+    &lt;/a&gt;
+    &lt;!-- Pre Loader --&gt;
+    &lt;div class=&quot;pre-loader&quot;&gt;
+      &lt;div class=&quot;pre-loader-bg&quot;&gt;
+        &lt;h2&gt;Loading
+          &lt;div class=&quot;vah-loader-dot&quot;&gt;.&lt;/div&gt;
+          &lt;div class=&quot;vah-loader-dot vah-delay-03&quot;&gt;.&lt;/div&gt;
+          &lt;div class=&quot;vah-loader-dot vah-delay-06&quot;&gt;.&lt;/div&gt;
+        &lt;/h2&gt;
+      &lt;/div&gt;
+    &lt;/div&gt;
+    &lt;!-- End Pre Loader --&gt;
+    &lt;!-- Vah Template Content Start --&gt;
+    &lt;div class=&quot;vah-theme&quot;&gt;
+      &lt;!-- Content Part --&gt;
+      &lt;div class=&quot;vah-content&quot;&gt;&lt;/div&gt;
+    &lt;/div&gt;</pre>
+            <h4>Footer<small>(Scripts):</small></h4>
+            <pre class="prettyprint">   &lt;footer class=&quot;footer&quot;&gt;&lt;/footer&gt;
+    &lt;!-- jQuery CDN --&gt;
+    &lt;script src=&quot;assets/js/jquery.min.js&quot; crossorigin=&quot;anonymous&quot;&gt;&lt;/script&gt;
+    &lt;!-- Main Template JS --&gt;
+    &lt;script src=&quot;assets/js/main.js&quot;&gt;&lt;/script&gt;
+  &lt;/body&gt;
+&lt;/html&gt;</pre>
+            <!-- Elements -->
+            <h3 id="elements"><u>Elements</u></h3>
+            <h4>Fonts:</h4>
+            - Vah template uses Google Fonts included into <strong>fonts</strong> folder:(Mulish)
+            <div class="clearfix"></div>
+            You can use any fonts that suits your project.
+            <div class="clearfix"></div>
+            <h4>Title, Header &amp; Label Classes:</h4>
+            <ul>
+              <li>.vah-extra-large-title <small>(Extra Large heading)</small></li>
+              <li>.vah-heading <small>(Large heading)</small></li>
+              <li>.vah-title <small>(Title)</small></li>
+              <li>.vah-label <small>(Dark label)</small></li>
+              <li>.vah-text <small>(Paragraph)</small></li>
+            </ul>
+            <div class="clearfix"></div>
+            <h4>Grid Structure:</h4>
+            <p>We use custom grid structure of vah. Vah template follows standard 12 column grid structure. More grid elements can be found on template bundle (elements.html file).</p>
+            <h4>Button Classes:</h4>
+            <ul>
+              <li>.btn - template button</li>
+              <li>.btn .btn-default - default button</li>
+              <li>.btn .btn-danger - red button</li>
+              <li>.btn .btn-invert - black button</li>
+            </ul>
+            - Sample block
+            <pre class="prettyprint">&lt;button class=&quot;btn btn-invert&quot;&gt;Value&lt;/button&gt;</pre>
+            <h4>Input Field Classes:</h4>
+            <ul>
+              <li>.input - textbox</li>
+              <li>.txtatrea - textarea</li>
+              <li>.vah-group > .input - input inside group</li>
+              <li>.btn .btn-invert - black button</li>
+            </ul>
+            - Sample block
+            <pre class="prettyprint">&lt;input type=&quot;text&quot; class=&quot;input&quot; /&gt;</pre>
+            <h4>Alert Box:</h4>
+            <ul>
+              <li>.alert - default alertbox</li>
+              <li>.alert.alert-primary - primary alertbox</li>
+              <li>.alert.alert-success - success alertbox</li>
+              <li>.alert.alert-danger - error alertbox</li>
+            </ul>
+            - Sample block
+            <pre class="prettyprint">&lt;div class=&quot;alert alert-primary&quot;&gt;&lt;p&gt;Message&lt;/p&gt;&lt;/div&gt;</pre>
+            - Closable alert messages
+            <pre class="prettyprint">&lt;div class=&quot;alert alert-primary&quot; data-alert-close&gt;&lt;p&gt;Message&lt;/p&gt;&lt;/div&gt;</pre>
+            <h4>Accordians:</h4>
+            - For accordian type 1<small>(add attribute <strong>data-accordian-collapse="single"</strong>)</small>
+            <pre class="prettyprint">&lt;div class=&quot;vah-accordian&quot; data-accordian-collapse=&quot;single&quot;&gt;</pre>
+            - For accordian type 2<small>(add attribute <strong>data-accordian-collapse="all"</strong>)</small>
+            <pre class="prettyprint">&lt;div class=&quot;vah-accordian&quot; data-accordian-collapse=&quot;all&quot;&gt;</pre>
+            - Sample block
+            <pre class="prettyprint">&lt;div class=&quot;vah-accordian&quot; data-accordian-collapse=&quot;single&quot;&gt;
+  &lt;div class=&quot;vah-accordian-row&quot;&gt;
+    &lt;h3 class=&quot;vah-accordian-title&quot; data-accordian=&quot;row1&quot;&gt;Accordian Title&lt;/h3&gt;
+    &lt;div class=&quot;vah-accordian-content&quot; id=&quot;row1&quot;&gt;
+      Description
+    &lt;/div&gt;
+  &lt;/div&gt;
+  .
+  .
+  .
+&lt;/div&gt;</pre>
+            <h4>Tabs:</h4>
+            - Sample block
+            <pre class="prettyprint">&lt;div class=&quot;vah-tabs&quot;&gt;
+  &lt;ul class=&quot;vah-tab-list&quot;&gt;
+    &lt;li class=&quot;tab-active&quot; data-tab=&quot;content1&quot;&gt;Tab 1&lt;/li&gt;
+    &lt;li data-tab=&quot;content2&quot;&gt;Tab 2&lt;/li&gt;
+    .
+    .
+  &lt;/ul&gt;
+  &lt;div class=&quot;vah-tab-body&quot;&gt;
+    &lt;div class=&quot;vah-tab-content tab-content-active&quot; id=&quot;content1&quot;&gt;Content 1
+    &lt;/div&gt;
+    &lt;div class=&quot;vah-tab-content&quot; id=&quot;content2&quot;&gt;Content 2
+    &lt;/div&gt;
+    .
+    .
+  &lt;/div&gt;
+&lt;/div&gt;</pre>
+            <h4>Progress Bar:</h4>
+            - Sample block
+            <pre class="prettyprint">&lt;div class=&quot;vah-progress vah-progress-active&quot;&gt;
+  &lt;div class=&quot;vah-progress-group&quot;&gt;
+    &lt;label&gt;HTML&lt;/label&gt;
+    &lt;div class=&quot;vah-progress-bar-bg&quot;&gt;
+      &lt;div class=&quot;vah-progress-bars&quot; data-range-value=&quot;80&quot; data-range-delay=&quot;0&quot; style=&quot;width: 80%;&quot;&gt;80%&lt;/div&gt;
+    &lt;/div&gt;
+  &lt;/div&gt;
+  &lt;div class=&quot;clearfix&quot;&gt;&lt;/div&gt;&lt;br&gt;
+  &lt;div class=&quot;vah-progress-group&quot;&gt;
+  .
+  .
+  .
+  &lt;/div&gt;
+&lt;/div&gt;</pre>
+            <hr>
+            <h3>-: Customization Options :-</h3>
+            <p> Here is a simple guide on editing HTML elements suitable to your need.</p>
+            <!-- Layouts -->
+            <h3 id="layouts"><u>Layouts</u></h3>
+            <p>It is very easy to change betweeen different header and body layouts. You just need to add a class to &lt;nav&gt; and &lt;body&gt; tags: </p>
+            <h4> Layout Container Customization:</h4>
+            <ul>
+              <li>Full Width Layout</li>
+              <pre class="prettyprint">&lt;body class="vah-body"&gt;</pre>
+            </ul>
+            <ul>
+              <li>Boxed Layout</li>
+              <pre class="prettyprint">&lt;body class="vah-body vah-box"&gt;</pre>
+            </ul>
+            <h4> Layout Skin Customization(Template Color Customization):</h4>
+            <ul>
+              <li>Default Layout</li>
+              Theme will load style.css file by default.
+              <pre class="prettyprint">&lt;link rel="stylesheet" type="text/css" href="assets/css/style.css"&gt;</pre>
+            </ul>
+            <ul>
+              <li>Dark Layout</li>
+              In header section, you have to replace the default css(style.css) file with style-dark.css file.
+              <pre class="prettyprint">&lt;link rel="stylesheet" type="text/css" href="assets/css/style-dark.css"&gt;</pre>
+            </ul>
+            <ul>
+              <li>Customized Color Layout</li>
+              Using stylus, you can generate your own desired template skin. To do so, you need to modify the stylus(variable.styl) file.
+              <div class="clearfix"></div>
+              - First step make sure Stylus bundle is properly running on your machine.
+              <div class="clearfix"></div>
+              - Change the values of variables named <strong>$primary-clr</strong>, <strong>$hover-clr</strong>, <strong>$gradient-color1</strong>, <strong>$gradient-color2</strong> according to your requirements.
+              <div class="clearfix"></div>
+              - On your project root, build the css file from stylus from your command line utility:<br />
+              <pre class="prettyprint">$~: stylus ../assets/stylus/style-default.styl -o ./assets/css/style-skin-name.css</pre>
+              - Above command will generate the css file named style-skin-name.css inside <strong>css</strong> folder.
+              <div class="clearfix"></div>
+              - In header section, you can replace the default css(style.css) file with style-skin-name.css file. You can use the following code to change the skin in header area:
+              <pre class="prettyprint">&lt;link rel="stylesheet" type="text/css" href="assets/css/style-skin-name.css"&gt;</pre>
+            </ul>
+            
+            <h3 id="menus"><u>Navigation Menu Customizations</u></h3>
+            <ul>
+              <li>Simple Menu</li>
+              <pre class="prettyprint">&lt;nav class="vah-navbar"&gt;</pre>
+            </ul>
+            <ul>
+              <li>Sticky Menu</li>
+              <pre class="prettyprint">&lt;nav class="vah-navbar vah-navbar-stick"&gt;</pre>
+            </ul>
+            <ul>
+              <li>Large Menu</li>
+              <pre class="prettyprint">&lt;nav class="vah-navbar vah-navbar-large"&gt;</pre>
+            </ul>
+            <ul>
+              <li>Transparent Menu</li>
+              <pre class="prettyprint">&lt;nav class="vah-navbar  navbar-transparent vah-navbar-fixed"&gt;</pre>
+            </ul>
+            <ul>
+              <li>Combination</li>
+              You can use the various combination of menus like following
+              <li>
+                <pre class="prettyprint">&lt;nav class="vah-navbar vah-navbar-stick vah-navbar-large"&gt;</pre>
+              </li>
+              <li>
+                <pre class="prettyprint">&lt;nav class="vah-navbar vah-navbar-large navbar-transparent"&gt;</pre>
+              </li>
+            </ul>
+            <ul>
+              <li>Megamenu (Submenu)</li>
+              Megamenu classes are...<br />
+              <pre class="prettyprint">&lt;li class=&quot;mega-menu mega-5-column&quot;&gt;...&lt;/li&gt;</pre>
+              1. Use class "mega-1-column" for one column megamenu <br />
+              2. Use class "mega-2-column" for two column megamenu <br />
+              .<br />
+              .<br />
+              5. Use class "mega-5-column" for five column megamenu<br />
+              <pre class="prettyprint">&lt;ul class=&quot;menu-items&quot;&gt;
+  &lt;li&gt;&lt;a href=&quot;#&quot;&gt;...&lt;/a&gt;&lt;/li&gt;
+  &lt;!-- Mega menu(5 column) --&gt;
+  &lt;li class=&quot;mega-menu mega-5-column&quot;&gt;
+    &lt;a&gt;Mega Menu&nbsp;&nbsp;&lt;i class=&quot;mdi mdi-chevron-down&quot;&gt;&lt;/i&gt;&lt;/a&gt;
+    &lt;ul class=&quot;submenu mob-submenu&quot;&gt;
+      &lt;li&gt;
+        &lt;ul&gt;
+          &lt;li&gt;&lt;a href=&quot;#&quot;&gt;...&lt;/a&gt;&lt;/li&gt;
+          .
+          .
+          .
+        &lt;/ul&gt;
+      &lt;/li&gt;
+      .
+      .
+      .
+    &lt;/ul&gt;
+  &lt;/li&gt;
+&lt;/ul&gt;</pre>
+            </ul>
+            <ul>
+              <li>Dropdown<small>(Inner Submenu Dropdown)</small></li>
+              <pre class="prettyprint">&lt;ul class=&quot;submenu&quot;&gt;
+  &lt;li&gt;
+    &lt;ul&gt;
+      &lt;li class=&quot;menu-dropdown&quot;&gt;&lt;a&gt;...&nbsp;&lt;i class=&quot;mdi mdi-chevron-right&quot;&gt;&lt;/i&gt;&lt;/a&gt;
+        &lt;ul class=&quot;menu-dropdown-list right&quot;&gt;
+          &lt;li&gt;&lt;a href=&quot;#&quot;&gt;...&lt;/a&gt;&lt;/li&gt;
+          .
+          .
+          .
+        &lt;/ul&gt;
+      &lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+&lt;/ul&gt;</pre>
+            </ul>
+  
+            <ul>
+              <li>Menu and Submenu Animations</li>
+              <ul>
+                <strong>1) Main Menu Animations</strong>
+                <li>Use class "menu-arrow"</li>
+                <li>Use class "menu-underline"</li>
+                <strong>2) Submenu & Dropdown Animations</strong>
+                <li>Use class "submenu-scale"</li>
+                <li>Use class "submenu-up"</li>
+              </ul>
+            </ul>
+            You can choose any combination of classes for main menu and submenu.
+            <div class="clearfix"></div>
+            - Sample blocks
+            <pre class="prettyprint">&lt;ul class=&quot;menu-items menu-arrow submenu-scale&quot;&gt;&lt;/ul&gt;</pre>
+            <pre class="prettyprint">&lt;ul class=&quot;menu-items menu-undeline submenu-up&quot;&gt;&lt;/ul&gt;</pre>
+
+            
+            <!-- Slider -->
+            <h3 id="slider"><u>Slider</u></h3>
+            <ul>
+              <li>Basic Snippet:</li>
+              <pre class="prettyprint">&lt;div class=&quot;vah-slider&quot; id=&quot;vah-slider&quot;&gt;
+  &lt;div class=&quot;vah-slider-slides&quot;&gt;
+    &lt;div class=&quot;vah-slider-slide&quot; data-vah-slider-image=&quot;assets/images/slider/1.jpg&quot;&gt;
+      &lt;div class=&quot;vah-slider-content&quot;&gt;
+        &lt;div class=&quot;vah-slider-inner&quot;&gt;
+          &lt;div class=&quot;vah-slider-inner-content&quot;&gt;
+            &lt;h1 class=&quot;vah-slider-title&quot;&gt;Welcome to the &lt;span&gt;&lt;strong&gt;&quot;Vah&quot;&lt;/strong&gt;&lt;/span&gt; Template!&lt;/h1&gt;
+            &lt;div class=&quot;clearfix&quot;&gt;&lt;/div&gt;
+            &lt;a href=&quot;about.html&quot; class=&quot;vah-gs-btn&quot; data-wow-delay='.5s'&gt;&lt;i class=&quot;mdi mdi-link&quot;&gt;&lt;/i&gt;&nbsp;Learn More&lt;/a&gt;
+          &lt;/div&gt;
+        &lt;/div&gt;
+      &lt;/div&gt;
+    &lt;/div&gt;
+  &lt;/div&gt;
+&lt;/div&gt;</pre>
+              <li>Change Images:</li>
+              <p>Kindly look for the custom element named <strong>"data-vah-slider-image"</strong>. Change the value of path with your actual image path:</p>
+              <pre class="prettyprint">&lt;div class="vah-slider-slide" data-vah-slider-image="assets/images/slider-1.jpg"&gt;&lt;/div&gt;</pre>
+              <li>Javascript Configurations</li>
+              <p>You can use the Animation classes for changing the effects.</p>
+              <pre class="prettyprint">&lt;script&gt;
+  $(&quot;#vah-slider&quot;).vahSlider({
+    in: 'animated fadeIn',
+    out: 'animated fadeOut'
+  });
+&lt;/script&gt;</pre>
+            </ul>
+            <!-- Scroll Animations-->
+            <h3 id="animations"><u>Vah Scroll Animations</u></h3>
+            <p>Vah template provides you control on scroll animations. You can customize your template by adding new animation style classes. The main element having class name <strong>vah-animated</strong> can be followed with following data attributes with possible values.</p>
+            <ul>
+              <li>data-animated-class (Possible value can be any <a href="https://daneden.github.io/animate.css" target="_blank">Animate.css</a> class)</li>
+              <li>data-animated-delay (Delay in seconds for the animation to be delayed upon scroll)</li>
+              <li> data-animated-duration (Duration in seconds upto the animation should render)</li>
+              <li>Sample Block:</li>
+              <pre class="prettyprint">&lt;div class=&quot;vah-box vah-animated&quot; data-animated-class=&quot;fadeInUp&quot; data-animated-delay=&quot;.2&quot; data-animated-duration=&quot;.5&quot;&gt;</pre>
+            </ul>
+            <!-- Coming Soon -->
+            <h3 id="coming_soon"><u>Coming Soon Page</u></h3>
+            <ul>
+              <li>Countdown Timer</li>
+              <p>To edit the countdown on coming soon page, please find the following block markup and script:</p>
+              <pre class="prettyprint">&lt;div class=&quot;clock&quot; style=&quot;margin:2em;display: inline-block;&quot;&gt;&lt;/div&gt;</pre>
+              <pre class="prettyprint">&lt;script type=&quot;text/javascript&quot;&gt;
+      var clock;
+      var month = 2; // Month index starts from 0, so 2 would be March
+      var date = 31;
+      $(document).ready(function() {
+        // Grab the current date
+        var currentDate = new Date();
+        // Set some date in the future.
+        var futureDate  = new Date(currentDate.getFullYear() + 1, month, date);
+        // Calculate the difference in seconds between the future and current date
+        var diff = futureDate.getTime() / 1000 - currentDate.getTime() / 1000;
+        // Instantiate a coutdown FlipClock
+        clock = $('.clock').FlipClock(diff, {
+          clockFace: 'DailyCounter',
+          countdown: true
+        });
+      });
+    &lt;/script&gt;</pre>
+              <p>More on Countdown timer can be found <a href="http://flipclockjs.com" target="_blank">here</a>.</p>
+            </ul>
+
+            <!-- Contact Us Form -->
+            <h3 id="contact_form"><u>Contact Us Page</u></h3>
+            <ul>
+              <p> Vah template provides your readymade Email sending contact page script. You can customize your contact us page POST action and Email address.</p>
+              <li>POST Method: You can look for <strong>action</strong> attribute and change your PHP file path accordingly.
+                <pre class="prettyprint">&lt;form action=&quot;post-contact.php&quot; method=&quot;POST&quot; id=&quot;contact_form&quot;&gt;
+.
+// FORM Elements
+.
+&lt;form&gt;</pre>
+              </li>
+              <li>Email Configurations: The current Email sending script can be found in file named 'post-contact.php'. This basic script will send email to your SET email address.
+              <pre class="prettyprint">&lt;?php
+  session_start(); // Session for storing the status message
+  $name = $_POST['name'];
+  $to = 'info@example.com';  // Set Email id where you want to receive Contact Form Emails
+  $from = $_POST['email'];
+  $subject = &quot;Subject&quot;;
+  $message = $_POST['message'];
+  $headers = 'From: '.$from.&quot;\r\n&quot; .
+            'Reply-To: webmaster@example.com' . &quot;\r\n&quot; . //Set to your webmaster Email Address
+            'X-Mailer: PHP/' . phpversion();;
+
+  $send_mail = mail($to, $subject, $message, $headers);
+  if( $send_mail ) {
+    $res['status'] = 'success';
+    $res['message'] = 'Message sent successfully.';
+  } else {
+    $res['status'] = 'fail';
+    $res['message'] = 'Error while sending the message.';
+  }
+  $_SESSION['res'] = $res;
+  header(&quot;Location: message.php&quot;);
+?&gt;</pre>
+<small>NOTE: Your hosting server should be capable of sending Emails.</small>
+              </li>
+            </ul>
+            <!-- Credit -->
+            <h3 id="credits"><u>Credits</u></h3>
+            <strong>3rd-Party Plugins / Libraries / Technologies we used. Without their help we can not make The Vah awesome.</strong>
+            <ul>  
+              <li>- Unsplash Photos <small>(<a href="https://unsplash.com/" target="_blank">https://www.unsplash.com</a>)</small></li>
+              <li>- Pexels Photos <small>(<a href="https://www.pexels.com/" target="_blank">https://www.pexels.com</a>)</small></li>
+              <li>- Stylus <small>(<a href="http://stylus-lang.com/" target="_blank">https://www.stylus-lang.com</a>)</small></li>
+              <li>- Animate CSS <small>(<a href="https://daneden.github.io/animate.css/" target="_blank">https://www.daneden.github.io/animate.css</a>)</small></li>
+              <li>- jQuery <small>(<a href="https://jquery.com/" target="_blank">https://www.jquery.com</a>)</small></li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="clearfix"></div><br /><br />  
+      </section>
+      <section class="vibrant centered">
+        <div class="">
+          <h4> This documentation template is provided by <a href="http://www.frittt.com" target="_blank">Frittt Templates</a></h4>
+        </div>
+      </section>
+      <footer>
+        <div class="">
+          <p> &copy; Copyright Vah Template. All Rights Reserved.</p>
+        </div>
+      </footer>
+    </div>
+    <script src="js/jquery.min.js"></script> 
+    <script type="text/javascript" src="js/prettify/prettify.js"></script> 
+    <script src="https://google-code-prettify.googlecode.com/svn/loader/run_prettify.js?lang=css&skin=sunburst"></script>
+    <script src="js/layout.js"></script>
+  </body>
+</html>
